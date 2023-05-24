@@ -1,14 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import NavBar from "@/components/navBar/navBar";
-import Banner from "@/components/banner/banner";
-import KnowUs from "@/components/knowUs/knowUs";
-import Products from "@/components/products/products";
-import Footer from "@/components/footer/footer";
-// import Link from "next/link";
-
-const inter = Inter({ subsets: ["latin"] });
+import NavBar from "../components/navbar/navbar";
+import Banner from "../components/banner/banner";
+import KnowUs from "../components/knowUs/knowUs";
+import Products from "../components/products/products";
+import Footer from "../components/footer/footer";
 
 function Home() {
   return (
