@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { products as prod } from "./assests/dataProducts";
+import { products as prod } from "../../assests/dataProducts";
 import styles from "@/styles/Produts.module.css";
 
 const Products = () => {

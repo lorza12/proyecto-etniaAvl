@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { products as produ } from "./assests/dataProducts";
+import { products as produ } from "../../assests/dataProducts";
 
 const ProductDetailPage = () => {
   const router = useRouter();
