@@ -1,0 +1,19 @@
+.navBarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(25, 24, 24);
+    padding: 15px;
+    padding-right: 100px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    
+  }
+
+  .navBarContainer__options {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }

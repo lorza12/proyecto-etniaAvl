@@ -1,0 +1,79 @@
+.main1 {
+    background-color: rgb(25, 24, 24);
+    padding-bottom: 250px;
+    padding-top: 200px;
+}
+
+.knowUSContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+  }
+
+
+  .knowUSContainer__text {
+
+    width: 30%;
+
+  }
+
+
+  .knowUSContainer__text__p1 {
+    color: rgb(225, 225, 225);
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-bottom: 20px;
+  }
+
+
+  .b {
+    color: white;
+  }
+
+  .knowUSContainer__button{
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    transition: all 200ms;
+
+  }
+
+  .knowUSContainer__button:hover{
+    transform: scale(1.1);
+    color: #ffffff;
+    background-color: #eb1010;
+  }
+
+
+  @media (max-width: 1024px) {
+
+    .main1 {
+      padding-top: 40px;
+      padding-bottom: 150px;
+    }
+
+    .knowUSContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+
+    }
+
+    .knowUSContainer__text {
+      text-align: center;
+      width: 60%;
+
+    }
+
+  }
+

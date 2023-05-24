@@ -1,0 +1,28 @@
+.main2 {
+   background-color: rgb(25, 24, 24);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.productsContainer__products {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   padding: 20px;
+   padding-top: 80px;
+   justify-content: center;
+   gap: 15px;
+   width: 90%;
+   height: 50%;
+   margin: auto;
+}
+
+.productsContainer {
+    color: white;
+    text-align: center;
+}
