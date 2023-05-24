@@ -32,7 +32,6 @@ function Banner() {
               <BsTwitter />
               <BsInstagram />
             </div>
-
             <div className={styles.vLine1}>{""}</div>
             <br />
             <p className={styles.p}>ETNIA</p>

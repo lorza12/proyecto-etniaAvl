@@ -1,9 +1,3 @@
-import Head from "next/head";
-import Footer from "@/components/footer/footer";
-import NavBar from "@/components/navBar/navBar";
-import Banner from "@/components/banner/banner";
-import KnowUs from "@/components/knowUs/knowUs";
-import Products from "@/components/products/products";
 import "@/styles/globals.css";
 import "@/styles/Banner.module.css";
 import "swiper/css";

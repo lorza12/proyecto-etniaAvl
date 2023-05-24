@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Banner.module.css";
 import NavBar from "@/components/navBar/navBar";
 import Banner from "@/components/banner/banner";
 import KnowUs from "@/components/knowUs/knowUs";
