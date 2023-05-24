@@ -11,7 +11,6 @@ import img1 from "./assets/20221120_164048.jpg";
 import img2 from "./assets/20221120_164145.jpg";
 import img3 from "./assets/20221120_164211.jpg";
 import img4 from "./assets/20221120_164047.jpg";
-import img5 from "./assets/20221120_164212.jpg";
 import img6 from "./assets/20221120_164100.jpg";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 import "swiper/css";
@@ -103,18 +102,6 @@ function Banner() {
               />
             </SwiperSlide>
             <SwiperSlide
-              key={5}
-              className={styles.bannerContainer__banner__SwiperSlide}
-            >
-              <Image
-                src={img5}
-                alt="img logo"
-                width={900}
-                height={550}
-                priority={true}
-              />
-            </SwiperSlide>
-            <SwiperSlide
               key={6}
               className={styles.bannerContainer__banner__SwiperSlide}
             >
@@ -179,18 +166,6 @@ function Banner() {
             >
               <Image
                 src={img4}
-                alt="img logo"
-                width={900}
-                height={550}
-                priority={true}
-              />
-            </SwiperSlide>
-            <SwiperSlide
-              key={5}
-              className={styles.bannerContainer__banner__SwiperSlide}
-            >
-              <Image
-                src={img5}
                 alt="img logo"
                 width={900}
                 height={550}
