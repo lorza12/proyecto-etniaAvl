@@ -35,13 +35,15 @@ function Banner() {
             <div className={styles.vLine1}>{""}</div>
             <br />
             <p className={styles.p}>ETNIA</p>
+
             <br />
+
             <div className={styles.vLine3}></div>
           </div>
 
           <Swiper
             autoplay={{
-              delay: 3000,
+              delay: 4000,
               disableOnInteraction: false,
             }}
             slidesPerView={3}
