@@ -89,9 +89,7 @@
 
 
 @media (max-width: 820px) {
-  .content {
-    padding: 4rem;
-  }
+
 
   .bannerContainer__banner__mySwiper {
     display: none;
@@ -107,13 +105,9 @@
     align-items: center;
 }
 
-.redes {
-  top: 40%;
- }
 
 }
 
-/* Tablet and Smaller Desktop */
 @media (max-width: 670px) {
 
   .bannerContainer__banner {
@@ -137,6 +131,10 @@
    }
 
    .p {
+    display: none;
+   }
+
+   .redes  {
     display: none;
    }
 

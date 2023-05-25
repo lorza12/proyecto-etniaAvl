@@ -3,7 +3,7 @@ import { Prompt } from "next/font/google";
 import styles from "@/styles/KnowUs.module.css";
 import Image from "next/image";
 import Logo from "../navbar/assets/LOGOETNIAAVL.png";
-
+import Logo2 from "../knowUs/assets/LOGOETNIAAVL2.png";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "400",
@@ -23,6 +23,10 @@ function KnowUs() {
           <div className={styles.knowUSContainer__logo}>
             <br />
             <Image src={Logo} alt="img logo" width={500} height={300} />
+          </div>
+          <div className={styles.knowUSContainer__logo2}>
+            <br />
+            <Image src={Logo2} alt="img logo" width={400} height={200} />
           </div>
           <div className={styles.knowUSContainer__text}>
             <div className={prompt.className}>

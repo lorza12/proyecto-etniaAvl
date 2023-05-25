@@ -54,6 +54,10 @@
     background-color: #eb1010;
   }
 
+  .knowUSContainer__logo2 {
+    display: none;
+  }
+
 
   @media (max-width: 1024px) {
 
@@ -73,6 +77,20 @@
       text-align: center;
       width: 60%;
 
+    }
+
+  }
+
+
+  @media (max-width: 490px) {
+
+    .knowUSContainer__logo {
+      display: none;
+    }
+
+    .knowUSContainer__logo2 {
+      display: initial;
+      padding-right: 10px;
     }
 
   }
