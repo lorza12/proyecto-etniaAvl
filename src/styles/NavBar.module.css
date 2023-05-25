@@ -1,19 +1,70 @@
 .navBarContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(25, 24, 24);
-    padding: 15px;
-    padding-right: 100px;
-    padding-left: 30px;
-    padding-bottom: 20px;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(25, 24, 24);
+  padding: 15px;
+  padding-right: 100px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+
+}
+
+.navBarContainer__options {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.navBarContainer__option2 {
+  display: none;
+}
+
+.navBarContainer__opt {
+  display: none;
+}
+
+@media (max-width: 670px) {
+
+  .navBarContainer {
+    padding: 0;
+    padding-right: 20px;
   }
 
   .navBarContainer__options {
-    color: white;
+    display: none;
+  }
+
+  .navBarContainer__opt {
+    position: absolute;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    left: 80%;
+  }
+
+  .navBarContainer__optButton {
+    background-color: #ffffff;
+    color: black;
+    border: 0;
+  }
+
+  .navBarContainer__option2 {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    max-height: 50px;
+    max-width: 50px;
+    align-items: center;
+    gap: 10px;
   }
+
+  .butto_cart {
+    background-color: transparent;
+    border: 0;
+    width: 50px;
+    transition: all 300ms;
+  }
+}

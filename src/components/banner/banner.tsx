@@ -13,6 +13,7 @@ import img3 from "./assets/20221120_164211.jpg";
 import img4 from "./assets/20221120_164047.jpg";
 import img6 from "./assets/20221120_164100.jpg";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
@@ -186,6 +187,11 @@ function Banner() {
             </SwiperSlide>
           </Swiper>
           <div className={styles.vLines2}></div>
+          <div className={styles.redes2}>
+            <BsFacebook />
+            <BsTwitter />
+            <BsInstagram />
+          </div>
         </div>
       </div>
     </>
