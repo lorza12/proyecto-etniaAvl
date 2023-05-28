@@ -1,28 +1,105 @@
 .main2 {
-   background-color: rgb(25, 24, 24);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 100% 100%;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
+  /* background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100% 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center; */
+
+  left: 0px;
+  top: 2410px;
+  background: linear-gradient(
+      360deg,
+      rgba(25, 24, 24, 0.87),
+      rgba(25, 24, 24, 0.87)
+    );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-size: 100%;
+
 }
 
 .productsContainer__products {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   padding: 20px;
-   padding-top: 80px;
-   justify-content: center;
-   gap: 15px;
-   width: 90%;
-   height: 50%;
-   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  padding-top: 80px;
+  justify-content: center;
+  gap: 15px;
+  width: 90%;
+  height: 50%;
+  margin: auto;
 }
 
 .productsContainer {
-    color: white;
-    text-align: center;
+  color: #ffffff;
+  text-align: center;
 }
+
+.productsContainer__product__section1 {
+  width: 400px;
+  height: 500px;
+  background: linear-gradient(250deg, rgba(255, 254, 254, 0.18), rgba(0, 0, 0, 0.9));
+  border-radius: 3em/13em;
+
+  }
+
+  .productsContainer__product__section1_1 {
+    display: flex;
+    text-align: left;
+    padding-top: 5px;
+  }
+
+  .pading__heareIcon {
+    padding-top: 50px;
+  }
+
+  .heartIcon {
+    display: flex;
+    background-color: #eb1010;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .productsContainer__product__section1_2 {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 100px;
+  }
+
+  .productsContainer__product__section1_2 p {
+    font-size: 13px;
+  }
+
+  .product__button{
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    transition: all 200ms;
+
+  }
+
+  .product__button:hover{
+    transform: scale(1.1);
+    color: #ffffff;
+    background-color: #eb1010;
+  }
+
+
+
+
+
+
+
+

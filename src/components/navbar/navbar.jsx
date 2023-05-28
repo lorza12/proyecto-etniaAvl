@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Prompt } from "next/font/google";
 import styles from "@/styles/NavBar.module.css";
 import Image from "next/image";
-import Logo from "./assets/LOGOETNIAAVL.png"
+import Logo from "../../../public/assets/LOGOETNIAAVL.png"
 import { MdOutlineStorage } from "react-icons/md";
 const prompt = Prompt({
   subsets: ["latin"],

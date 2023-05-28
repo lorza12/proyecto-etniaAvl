@@ -3,6 +3,8 @@ import { Prompt } from "next/font/google";
 import styles from "@/styles/Products.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { AiFillHeart } from "react-icons/ai";
+import { products as prod } from "../../assests/dataProducts";
 
 const prompt = Prompt({
   subsets: ["latin"],
@@ -26,79 +28,44 @@ function Products() {
               <Link href={`/products`}>Ver productos</Link>
             </div>
           </div>
+
           <div className={styles.productsContainer__products}>
-            <div className={styles.productsContainer__product1}>
-              <Image
-                src="https://res.cloudinary.com/df4snwy5t/image/upload/v1681329988/256_gdz4e1.png"
-                alt="img logo"
-                width={300}
-                height={250}
-              />
-              <p>WTS 506</p>
-            </div>
-            <div className={styles.productsContainer__product2}>
-              <Image
-                src="https://res.cloudinary.com/df4snwy5t/image/upload/v1681329988/256_gdz4e1.png"
-                alt="img logo"
-                width={300}
-                height={250}
-              />
-              <p>WTS 506</p>
-            </div>
-            <div className={styles.productsContainer__product3}>
-              <Image
-                src="https://res.cloudinary.com/df4snwy5t/image/upload/v1681329988/256_gdz4e1.png"
-                alt="img logo"
-                width={300}
-                height={250}
-              />
-              <p>WTS 506</p>
-            </div>
-            <div className={styles.productsContainer__product4}>
-              <Image
-                src="https://res.cloudinary.com/df4snwy5t/image/upload/v1681419094/403_j1quy4.png"
-                alt="img logo"
-                width={300}
-                height={250}
-              />
-              <p>WTS 506</p>
-            </div>
-            <div className={styles.productsContainer__product5}>
-              <Image
-                src="https://res.cloudinary.com/df4snwy5t/image/upload/v1681419094/403_j1quy4.png"
-                alt="img logo"
-                width={300}
-                height={250}
-              />
-              <p>WTS 506</p>
-            </div>
-            <div className={styles.productsContainer__product6}>
-              <Image
-                src="https://res.cloudinary.com/df4snwy5t/image/upload/v1681419094/403_j1quy4.png"
-                alt="img logo"
-                width={300}
-                height={250}
-              />
-              <p>WTS 506</p>
-            </div>
-            <div className={styles.productsContainer__product7}>
-              <Image
-                src="https://res.cloudinary.com/df4snwy5t/image/upload/v1681419094/403_j1quy4.png"
-                alt="img logo"
-                width={300}
-                height={250}
-              />
-              <p>WTS 506</p>
-            </div>
-            <div className={styles.productsContainer__product8}>
-              <Image
-                src="https://res.cloudinary.com/df4snwy5t/image/upload/v1681419094/403_j1quy4.png"
-                alt="img logo"
-                width={300}
-                height={250}
-              />
-              <p>WTS 506</p>
-            </div>
+            {prod.map((product) => (
+              <>
+                <div
+                  key={product.id}
+                  className={styles.productsContainer__product__section1}
+                >
+                  <div
+                    className={styles.productsContainer__product__section1_1}
+                  >
+                    {" "}
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      width={300}
+                      height={250}
+                    />
+                    <div className={styles.pading__heareIcon}>
+                      <div className={styles.heartIcon}>
+                        <AiFillHeart fontSize={22} color="#ffffff" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    className={styles.productsContainer__product__section1_2}
+                  >
+                    <h1 className={prompt.className}>{product.name}</h1>
+                    <p className={prompt.className}>{product.description}</p>
+                    <br />
+                    <button type="button" className={styles.product__button}>
+                      Ver Producto{" "}
+                    </button>
+                  </div>
+                </div>
+              </>
+            ))}
           </div>
         </div>
       </main>

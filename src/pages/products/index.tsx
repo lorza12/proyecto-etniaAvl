@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import { products as prod } from "../../assests/dataProducts";
-import styles from "@/styles/Produts.module.css";
+// import styles from "@/styles/Produts.module.css";
 
 const Products = () => {
   return (
@@ -13,7 +13,7 @@ const Products = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>PRODUCTOS</h1>
-      <div className={styles.divproducts}>
+      <div>
         {prod.map((product) => (
           <>
             <div>

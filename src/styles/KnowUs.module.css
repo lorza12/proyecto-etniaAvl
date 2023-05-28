@@ -2,6 +2,7 @@
     background-color: rgb(25, 24, 24);
     padding-bottom: 250px;
     padding-top: 200px;
+    /* background: linear-gradient(180deg, rgba(24, 23, 26, 0) 0%, #5f0908 100%); */
 }
 
 .knowUSContainer {
@@ -92,6 +93,5 @@
       display: initial;
       padding-right: 10px;
     }
-
   }
 
