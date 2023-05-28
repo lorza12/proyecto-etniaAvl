@@ -28,9 +28,9 @@ function NavBar() {
           />
         </div>
         <div className={styles.navBarContainer__options}>
-          <p>Productos</p>
-          <p>Compañia</p>
-          <p>Marcas Asociadas</p>
+          <p className={prompt.className}>Productos</p>
+          <p className={prompt.className}>Compañia</p>
+          <p className={prompt.className}>Marcas Asociadas</p>
         </div>
         <div className={styles.navBarContainer__option2}>
               <button type="button" className={styles.butto_cart} onClick={toggle}>

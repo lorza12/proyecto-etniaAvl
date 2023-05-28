@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import { products as prod } from "../../assests/dataProducts";
 // import styles from "@/styles/Produts.module.css";
 
@@ -22,7 +23,12 @@ const Products = () => {
                   <>
                     <p>{product.id}</p>
                     <h2>{product.name}</h2>
-                    <p>{product.img}</p>
+                    <Image
+                      src={product.image}
+                      alt={""}
+                      width={200}
+                      height={250}
+                    ></Image>
                   </>
                 ) : null}
               </Link>

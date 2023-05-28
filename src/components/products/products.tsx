@@ -59,9 +59,11 @@ function Products() {
                     <h1 className={prompt.className}>{product.name}</h1>
                     <p className={prompt.className}>{product.description}</p>
                     <br />
-                    <button type="button" className={styles.product__button}>
-                      Ver Producto{" "}
-                    </button>
+                    <Link href={`/products/${product.id}`}>
+                      <button type="button" className={styles.product__button}>
+                        Ver Producto{" "}
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </>

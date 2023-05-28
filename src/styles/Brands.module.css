@@ -1,0 +1,30 @@
+.bransContainer {
+  background-color: black;
+
+}
+
+.bransContainer__title {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.bransContainer__brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  gap: 100px;
+}
+
+.bransContainer__brand__circle {
+  display: flex;
+  background-color: #000000;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 2px 6px rgb(51, 36, 36);
+}
+

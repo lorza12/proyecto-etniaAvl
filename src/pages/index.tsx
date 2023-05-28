@@ -3,6 +3,7 @@ import NavBar from "../components/navbar/navbar";
 import Banner from "../components/banner/banner";
 import KnowUs from "../components/knowUs/knowUs";
 import Products from "../components/products/products";
+import Brands from "@/components/brands/Brands";
 import Footer from "../components/footer/footer";
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
       <Banner />
       <KnowUs />
       <Products />
+      <Brands />
       <Footer />
     </>
   );
