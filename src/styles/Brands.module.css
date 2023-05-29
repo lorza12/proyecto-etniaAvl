@@ -1,12 +1,14 @@
 .bransContainer {
-  background-color: black;
+  background-color: rgb(25, 24, 24);
   height: 100%;
 }
 
 .bransContainer__title {
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
+  font-size: 26px;
+
 }
 
 .bransContainer__brands {
@@ -20,7 +22,7 @@
 
 .bransContainer__brand__circle {
   display: flex;
-  background-color: #000000;
+  background-color: rgb(25, 24, 24);
   border-radius: 50%;
   height: 200px;
   width: 200px;

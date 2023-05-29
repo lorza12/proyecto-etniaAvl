@@ -1,12 +1,16 @@
 import Head from "next/head";
 import styles from "@/styles/Brands.module.css";
 import Image from "next/image";
-import { Prompt } from "next/font/google";
+import { Prompt, Lato } from "next/font/google";
 import brand1 from "../../../public/assets/descargammmmm-removebg-preview.png";
 import brand2 from "../../../public/assets/descarga-removebg-preview.png";
 import brand3 from "../../../public/assets/descarga__1_-removebg-preview.png";
 
 const prompt = Prompt({
+  subsets: ["latin"],
+  weight: "400",
+});
+const lato = Lato({
   subsets: ["latin"],
   weight: "400",
 });
@@ -22,7 +26,7 @@ function Brands() {
       </Head>
       <main className={styles.bransContainer}>
         <section className={styles.bransContainer__title}>
-          <h1 className={prompt.className}>Marcas asociadas</h1>
+          <h1 className={lato.className}>Marcas asociadas</h1>
         </section>
         <section className={styles.bransContainer__brands}>
           <article className={styles.bransContainer__brand1}>

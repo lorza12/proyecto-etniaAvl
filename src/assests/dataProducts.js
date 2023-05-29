@@ -5,7 +5,7 @@ export const products = [
     name: "LW-D/DY",
     image: "/assets/256-removebg-preview.png",
     description:
-      "La serie LW-D/DY incorpora el innovador sistema Wire Drive, el cual ha sido desarrollado para ayudar a evitar cruces de cable no deseados y peligrosos en el tambor del cabrestante",
+      "La serie LW-D/DY incorpora el innovador sistema Wire Drive, el cual ha sido desarrollado para ayudar a evitar cruces",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const products = [
     name: "bafle",
     image: "/assets/LW_155_D-Cerrada3_20171020100650-removebg-preview.png",
     description:
-    "La serie LW-D/DY incorpora el innovador sistema Wire Drive, el cual ha sido desarrollado para ayudar a evitar cruces de cable no deseados y peligrosos en el tambor del cabrestante",
+    "La serie LW-D/DY incorpora el innovador sistema Wire Drive, el cual ha sido desarrollado para ayudar a evitar cruces",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const products = [
     name: "sum",
     image: "/assets/LW-265-D_Abierta_20191213131142-removebg-preview.png",
     description:
-    "La serie LW-D/DY incorpora el innovador sistema Wire Drive, el cual ha sido desarrollado para ayudar a evitar cruces de cable no deseados y peligrosos en el tambor del cabrestante",
+    "La serie LW-D/DY incorpora el innovador sistema Wire Drive, el cual ha sido desarrollado para ayudar a evitar cruces",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const products = [
     name: "compas",
     image: "/assets/LW_185_D_pers_abierta_20180209110607-removebg-preview.png",
     description:
-    "La serie LW-D/DY incorpora el innovador sistema Wire Drive, el cual ha sido desarrollado para ayudar a evitar cruces de cable no deseados y peligrosos en el tambor del cabrestante",
+    "La serie LW-D/DY incorpora el innovador sistema Wire Drive, el cual ha sido desarrollado para ayudar a evitar cruces",
   },
 
   {
@@ -38,7 +38,7 @@ export const products = [
     name: "trarra",
     image: "/assets/256-removebg-preview.png",
     description:
-    "La serie LW-D/DY incorpora el innovador sistema Wire Drive, el cual ha sido desarrollado para ayudar a evitar cruces de cable no deseados y peligrosos en el tambor del cabrestante",
+    "La serie LW-D/DY incorpora el innovador sistema Wire Drive, el cual ha sido desarrollado para ayudar a evitar cruces",
   },
   {
     id: 6,
@@ -46,14 +46,7 @@ export const products = [
     name: "bafle",
     image: "/assets/LW_155_D-Cerrada3_20171020100650-removebg-preview.png",
     description:
-    "La serie LW-D/DY incorpora el innovador sistema Wire Drive, el cual ha sido desarrollado para ayudar a evitar cruces de cable no deseados y peligrosos en el tambor del cabrestante",
+    "La serie LW-D/DY incorpora el innovador sistema Wire Drive, el cual ha sido desarrollado para ayudar a evitar cruces",
   },
-  {
-    id: 7,
-    category: "sum",
-    name: "sum",
-    image: "/assets/LW-265-D_Abierta_20191213131142-removebg-preview.png",
-    description:
-    "La serie LW-D/DY incorpora el innovador sistema Wire Drive, el cual ha sido desarrollado para ayudar a evitar cruces de cable no deseados y peligrosos en el tambor del cabrestante",
-  },
+
 ];
