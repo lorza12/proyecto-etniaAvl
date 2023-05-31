@@ -2,7 +2,7 @@ import Head from "next/head";
 import NavBar from "../components/navbar/navbar";
 import Banner from "../components/banner/banner";
 import KnowUs from "../components/knowUs/knowUs";
-import Products from "../components/products/Products";
+import Products from "../components/products/products1";
 import Brands from "@/components/brands/Brands";
 import Footer from "../components/_footer/footer1";
 
