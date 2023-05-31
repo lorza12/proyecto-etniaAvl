@@ -1,7 +1,8 @@
 .footerContainer {
     background-color: rgb(8, 8, 8);
     height: 100%;
-    padding-top: 50px;
+    padding-top: 70px;
+    padding-bottom: 30px;
 
 }
 
@@ -51,4 +52,5 @@
   padding-top: 20px;
   margin-right: 10%;
   margin-left: 10%;
+
 }
