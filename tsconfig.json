@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/footer/xsaasn.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/_footer/xsaasn.js"],
   "exclude": ["node_modules"]
 }
