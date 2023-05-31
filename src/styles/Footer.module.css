@@ -1,25 +1,54 @@
-.main2 {
-    background-color: rgb(21, 20, 20);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: 100% 100%;
+.footerContainer {
+    background-color: rgb(8, 8, 8);
+    height: 100%;
+    padding-top: 50px;
 
 }
 
-.footerContainer {
+.footerContainer h1 {
+  font-size: 18px;
+}
+
+.footerContainer__section1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-    padding-top: 10%;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
-.footerContainer__information {
-
-    justify-content: center;
+.footerContainer__section1__hours__sections  {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-.map {
-    width: 400px;
-    height: 300px;
+.divs__interval {
+  padding-right: 20px;
+  border-right: 1px solid #fff;
+}
+
+.footerContainer__section1__networks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 80px;
+}
+
+.div__networks {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.footerContainer__section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
 }

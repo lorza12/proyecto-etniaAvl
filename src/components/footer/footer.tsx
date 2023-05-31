@@ -2,8 +2,9 @@ import Head from "next/head";
 import { Prompt } from "next/font/google";
 import styles from "@/styles/Footer.module.css";
 import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
-import "leaflet/dist/leaflet.css";
-import Link from "next/link";
+import { FaCopyright } from "react-icons/fa";
+import Image from "next/image";
+import Logo from "../../../public/assets/logo-indcomer.png";
 
 const prompt = Prompt({
   subsets: ["latin"],
@@ -19,29 +20,64 @@ function Footer() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main2}>
-        <div className={styles.footerContainer}>
-          <div className={prompt.className}>
-            <div className={styles.footerContainer__information}>
-              <h1>Contacto</h1>
-              <h2>DIRECCION</h2>
+      <main className={styles.footerContainer}>
+        <section className={prompt.className}>
+          <section className={styles.footerContainer__section1}>
+            <article className={styles.footerContainer__section1__inf}>
+              <h1>Bogota</h1>
+              <p>Calle 136 # 53-30</p>
+              <br />
+              <h1>Correo electronico</h1>
+              <p>etnia@gmail.com</p>
+              <br />
+              <h1>Telefono</h1>
+              <p>314 673 05423</p>
+            </article>
+            <article className={styles.footerContainer__section1__hours}>
+              <h1>Horarios</h1>
+              <div
+                className={styles.footerContainer__section1__hours__sections}
+              >
+                <div className={styles.divs__interval}>
+                  <p>Lun-Vie</p>
+                  <p>8:00 a.m - 5:00 p.m</p>
+                </div>
+                <div className={styles.divs__interval}>
+                  <p>Sáb</p>
+                  <p>9:00 a.m - 5:00 p.m</p>
+                </div>
+                <div>
+                  <p>Lun-Vie</p>
+                  <p>10:00 a.m - 4:00 p.m</p>
+                </div>
+              </div>
+            </article>
+            <article className={styles.footerContainer__section1__networks}>
+              <h1>Síguenos</h1>
+              <div className={styles.div__networks}>
+                <BsFacebook fontSize={30} />
+                <br />
+                <BsInstagram fontSize={30} />
+                <br />
+                <BsTwitter fontSize={30} />
+              </div>
+            </article>
+          </section>
+          <section className={styles.footerContainer__section2}>
+            <article>
               <p>
-                Calle 136 # 53-30 <br /> Bogota
+                <FaCopyright />
+                Todos los derechos reservados 2023
               </p>
-              <h2>CORREO ELECTRONICO</h2>
-              <p>hola@etniaavl.com</p>
-              <h2>TELEFONO</h2>
-              <p>314 673 0543</p>
-              <h2>REDES</h2>
-              <p>
-                <BsFacebook />
-                <BsInstagram />
-                <BsTwitter />
-              </p>
-            </div>
-          </div>
-          <div className={styles.footerContainer__map}></div>
-        </div>
+            </article>
+            <article>
+              <p>Politicas EtniaAvl</p>
+            </article>
+            <article>
+              <Image src={Logo} alt="logo" width={200} />
+            </article>
+          </section>
+        </section>
       </main>
     </>
   );
