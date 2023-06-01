@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: row;
   gap: 30px;
+  font-size: 18px;
 }
 
 .navBarContainer__option2 {
@@ -26,15 +27,63 @@
   display: none;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 730px) {
+
+  .span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+  }
+
+  .span2 {
+    font-size: 24px;
+
+  }
 
   .navBarContainer {
     padding: 0;
     padding-right: 20px;
+    padding-bottom: 50px;
   }
 
   .navBarContainer__options {
     display: none;
+  }
+
+  .butto_cart {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .butto_cart2 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: start;
+    font-size: 20px;
+  }
+
+  .navBarContainer__opt {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+  z-index: 999;
+  }
+
+  .menuOpen {
+    transform: translateX(0);
+  }
+
+  .nemuItems {
+    padding: 10px;
+    list-style: none;
+    margin: 0;
   }
 
   .navBarContainer__opt {
@@ -46,25 +95,28 @@
     left: 80%;
   }
 
-  .navBarContainer__optButton {
-    background-color: #ffffff;
-    color: black;
-    border: 0;
+  .navBarContainer__opt {
+    position: absolute;
+    background-color: rgba(39, 37, 37, 0.95);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    top: 0%;
+    left: 17%;
+
   }
 
   .navBarContainer__option2 {
     display: flex;
     flex-direction: row;
-    max-height: 50px;
-    max-width: 50px;
     align-items: center;
     gap: 10px;
+
   }
 
-  .butto_cart {
-    background-color: transparent;
-    border: 0;
-    width: 50px;
-    transition: all 300ms;
-  }
+
+
 }
+
+

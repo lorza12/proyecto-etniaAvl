@@ -1,13 +1,18 @@
 .footerContainer {
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(5, 5, 5);
     height: 100%;
     padding-top: 70px;
     padding-bottom: 30px;
+
 
 }
 
 .footerContainer h1 {
   font-size: 18px;
+}
+
+.footerContainer p {
+  opacity: 0.85;
 }
 
 .footerContainer__section1 {
@@ -19,6 +24,7 @@
     border-bottom: 1px solid #fff;
     margin-right: 10%;
     margin-left: 10%;
+    gap: 20px;
 }
 
 .footerContainer__section1__hours__sections  {
@@ -52,5 +58,21 @@
   padding-top: 20px;
   margin-right: 10%;
   margin-left: 10%;
+  gap: 10px;
+
+}
+
+.subrayado {
+  text-decoration: underline;
+
+}
+
+@media (max-width: 575px) {
+
+  .footerContainer__section2 {
+    display: flex;
+    align-items: center;
+
+  }
 
 }

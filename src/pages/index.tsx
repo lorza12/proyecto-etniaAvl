@@ -1,10 +1,8 @@
 import Head from "next/head";
-import NavBar from "../components/navbar/navbar";
 import Banner from "../components/banner/banner";
 import KnowUs from "../components/knowUs/knowUs";
 import Products from "../components/products/products1";
 import Brands from "@/components/brands/Brands";
-import Footer from "../components/_footer/footer1";
 
 function Home() {
   return (
@@ -15,12 +13,10 @@ function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar />
       <Banner />
       <KnowUs />
       <Products />
       <Brands />
-      <Footer />
     </>
   );
 }
