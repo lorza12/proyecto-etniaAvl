@@ -4,6 +4,7 @@ import styles from "@/styles/KnowUs.module.css";
 import Image from "next/image";
 import Logo from "../navbar/assets/LOGOETNIAAVL.png";
 import Logo2 from "../knowUs/assets/LOGOETNIAAVL2.png";
+import Link from "next/link";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "400",
@@ -44,9 +45,15 @@ function KnowUs() {
                 experiencias <b className={styles.b}> únicas</b> y
                 <b className={styles.b}> memorables</b>.
               </p>
-              <button type="button" className={styles.knowUSContainer__button}>
-                Conocer mas{" "}
-              </button>
+              <Link href={"/about"}>
+                {" "}
+                <button
+                  type="button"
+                  className={styles.knowUSContainer__button}
+                >
+                  Conocer mas{" "}
+                </button>
+              </Link>
             </div>
           </div>
         </div>

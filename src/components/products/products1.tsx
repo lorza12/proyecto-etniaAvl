@@ -3,7 +3,7 @@ import { Prompt } from "next/font/google";
 import styles from "@/styles/Products.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { AiFillHeart } from "react-icons/ai";
+import { GiCheckMark } from "react-icons/gi";
 import { products as prod } from "../../assests/dataProducts";
 
 const prompt = Prompt({
@@ -47,7 +47,7 @@ function Products() {
                     />
                     <div className={styles.pading__heareIcon}>
                       <div className={styles.heartIcon}>
-                        <AiFillHeart fontSize={22} color="#ffffff" />
+                        <GiCheckMark fontSize={22} color="#ffffff" />
                       </div>
                     </div>
                   </div>

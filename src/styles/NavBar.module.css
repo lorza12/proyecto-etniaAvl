@@ -29,6 +29,10 @@
 
 @media (max-width: 730px) {
 
+  .navBarContainer {
+    overflow-x: hidden;
+  }
+
   .span {
     display: flex;
     flex-direction: row;

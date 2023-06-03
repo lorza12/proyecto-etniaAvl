@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "@/styles/NavBar.module.css";
 import Image from "next/image";
 import Logo from "../../../public/assets/LOGOETNIAAVL.png"
-import { MdOutlineStorage } from "react-icons/md";
+import { ImMenu } from "react-icons/im";
 import { AiFillHome } from "react-icons/ai";
 import { SiWebpack } from "react-icons/si";
 import { RiRegisteredFill } from "react-icons/ri";
@@ -44,7 +44,7 @@ function NavBar() {
         <div className={styles.navBarContainer__option2}>
               <button type="button" className={styles.butto_cart} onClick={toggle}>
                 <p>
-                  <MdOutlineStorage color="#ffffff" size={35}/>
+                  <ImMenu color="#ffffff" size={40}/>
                 </p>
               </button>
             </div>
