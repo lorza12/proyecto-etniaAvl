@@ -31,6 +31,7 @@
 
   .navBarContainer {
     padding: 10px;
+    padding-left: 0;
   }
 
   .navBarContainer__options {
@@ -98,91 +99,6 @@
     align-items: center;
 
   }
-
-
-  /* .span {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
-  }
-
-  .span2 {
-    font-size: 24px;
-
-  }
-
-  .navBarContainer {
-    padding: 0;
-    padding-right: 20px;
-    padding-bottom: 50px;
-
-  }
-
-  .navBarContainer__options {
-    display: none;
-  }
-
-  .butto_cart {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  .butto_cart2 {
-    background: none;
-    border: none;
-    cursor: pointer;
-    text-align: start;
-    font-size: 20px;
-  }
-
-  .nemuItems {
-    padding: 10px;
-    list-style: none;
-    margin: 0;
-  }
-
-  .navBarContainer__opt {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(39, 37, 37, 0.95);
-  transform: translateX(100%);
-  transition: transform 0.3s ease-out;
-  z-index: 999;
-  }
-
-  .menuOpen {
-    transform: translateX(0);
-  } */
-
-
-
-
-  /* .navBarContainer__opt {
-    position: absolute;
-    ;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px;
-    top: 0%;
-    left: 17%;
-    overflow-x: hidden;
-
-  } */
-
-  /* .navBarContainer__option2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-
-  } */
-
-
 
 }
 

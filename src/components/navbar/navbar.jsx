@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useRouter } from 'next/router';
 import { Prompt } from "next/font/google";
 import Link from "next/link";
 import styles from "@/styles/NavBar.module.css";
@@ -16,9 +17,15 @@ const prompt = Prompt({
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleItemClick = (path) => {
+    setIsOpen(false);
+    router.push(path);
   };
 
   return (
@@ -62,7 +69,7 @@ function NavBar() {
             <ul className={styles.menuItems}>
               <div className={styles.span}>
                 <Link href={"/"}>
-                  <li className={prompt.className}>
+                  <li className={prompt.className} onClick={() => handleItemClick('/')}>
                     {" "}
                     <AiFillHome size={20} /> Inicio{" "}
                   </li>
@@ -73,7 +80,7 @@ function NavBar() {
               <br />
               <div className={styles.span}>
                 <Link href={"products"}>
-                  <li className={prompt.className}>
+                  <li className={prompt.className} onClick={() => handleItemClick('products')}>
                     {" "}
                     <SiWebpack size={20} /> Productos
                   </li>
@@ -84,7 +91,7 @@ function NavBar() {
               <br />
               <div className={styles.span}>
                 <Link href={"/about"}>
-                  <li className={prompt.className}>
+                  <li className={prompt.className} onClick={() => handleItemClick('about')}>
                     <HiOfficeBuilding size={20} /> Compañia
                   </li>
                 </Link>
@@ -94,7 +101,7 @@ function NavBar() {
               <br />
               <div className={styles.span}>
                 <Link href={"/brands"}>
-                  <li className={prompt.className}>
+                  <li className={prompt.className} onClick={() => handleItemClick('brands')}>
                     <RiRegisteredFill size={20} /> Marcas
                   </li>
                 </Link>
