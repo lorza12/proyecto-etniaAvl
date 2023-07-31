@@ -4,7 +4,7 @@ import styles from "@/styles/Products.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { GiCheckMark } from "react-icons/gi";
-import { products as prod } from "../../assests/dataProducts";
+import { mainProducts as prod } from "../../assets/dataMainProducts";
 
 const prompt = Prompt({
   subsets: ["latin"],
@@ -56,7 +56,7 @@ function Products() {
                     className={styles.productsContainer__product__section1_2}
                   >
                     <h1 className={prompt.className}>{product.name}</h1>
-                    <p className={prompt.className}>{product.description}</p>
+                    <p className={prompt.className}>{product.tags}</p>
                     <br />
                     <Link href={`/products/${product.id}`}>
                       <button type="button" className={styles.product__button}>

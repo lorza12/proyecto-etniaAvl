@@ -1,0 +1,296 @@
+.productsGlobalContainer {
+  padding: 3rem 0 7rem;
+}
+
+.productsGlobalContainer > h1 {
+  text-align: center;
+  margin: 0 0 3em;
+  font-size: 28px;
+
+}
+
+.productsWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0 0 0 2em;
+  overflow-x: hidden;
+
+}
+
+.brandContainer {
+  margin: 2em 0 0;
+
+}
+
+.brandTitle {
+  pointer-events: none;
+
+}
+
+
+.brandTitle > h3 {
+  color: #3595f5;
+  margin: 0 0 0.6em;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.brandList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 9em;
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 14px;
+
+}
+
+.btnClose {
+  display: none;
+}
+
+.brandListItem {
+  padding: 0.5em 0;
+
+  transition: all 0.2s linear;
+}
+
+.brandListItem:hover,
+.inputBrand:checked + label {
+  color: #3595f5;
+}
+
+.inputBrand {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.productsContainerMajor {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+}
+
+.productsContainer {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 32%;
+
+  width: 80%;
+  gap: 2rem;
+  padding: 0 2rem 2rem;
+  text-align: center;
+
+  overflow-x: hidden;
+  scrollbar-width: none;
+  overscroll-behavior-inline: contain;
+
+  scroll-snap-type: inline mandatory;
+}
+
+.productsContainer > * {
+  scroll-snap-align: start;
+  scroll-padding-inline: 3rem;
+}
+
+.productsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.productsItem {
+  display: grid;
+  grid-template-rows: min-content;
+  justify-items: center;
+  padding: 2rem;
+}
+
+.productImage {
+  inline-size: 80%;
+  object-fit: contain;
+}
+
+.details {
+  border: none;
+  background-color: transparent;
+  font-size: 1.1em;
+  cursor: pointer;
+
+}
+
+.productsLink:hover {
+  transform: scale(1.1);
+}
+
+.productsContainer__btn {
+  width: 100%;
+  padding: 0;
+
+  background-color: transparent;
+  color: #727272;
+  outline: none;
+  border: none;
+  font-size: 4em;
+
+  cursor: pointer;
+}
+
+.productsContainer__btn:hover {
+  color: #000;
+}
+
+.productsContainer__btn:disabled {
+  color: #e5e5e5;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .productsContainer {
+    grid-auto-columns: 50%;
+  }
+
+  .productsContainerMajor {
+    justify-content: center;
+  }
+
+  .productsWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    padding: 0;
+  }
+
+  .brandTitle > h3 {
+    font-size: 1.2em;
+    border-bottom: 1px solid #bcbcbc;
+    padding: 1em 1em 1em 2em;
+  }
+
+  .brandTitle {
+    pointer-events: all;
+  }
+
+  .brandListItem:hover,
+  .inputBrand:checked + label {
+    color: #000;
+  }
+
+  .brandList {
+    display: none;
+    position: absolute;
+    background: rgb(53, 149, 245);
+    color: #fff;
+    width: 40%;
+    margin: -0.8em 0 0;
+    padding: 2em;
+    height: auto;
+  }
+
+
+
+  .brandListItem {
+    font-size: 1em;
+    padding: 1em 0;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .brandTitle ~ input:checked ~ .brandList {
+    display: block;
+    height: auto;
+  }
+
+  .brandContainer {
+    margin: 0;
+  }
+
+  .productsWrapper {
+    padding: 0 0 0 2em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .productsGlobalContainer > h1 {
+    margin: 0 0 1em;
+  }
+
+  .productsContainerMajor {
+    justify-content: center;
+  }
+
+  .productsWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .brandTitle > h3 {
+    font-size: 1.2em;
+    border-bottom: 1px solid #bcbcbc;
+    padding: 1em 1em 1em 2em;
+  }
+
+  .brandTitle {
+    pointer-events: all;
+  }
+
+  .productsContainer {
+    padding: 0;
+  }
+
+  .productsContainer {
+    grid-auto-columns: 100%;
+  }
+
+  .btnClose {
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1.2rem;
+    display: inline;
+  }
+
+  .brandList {
+    display: none;
+    position: absolute;
+    background: rgb(53, 149, 245);
+    color: #fff;
+    margin: -0.8em 0 0;
+    padding: 2em;
+    height: auto;
+    width: 70%;
+  }
+
+  .brandListItem {
+    font-size: 1em;
+    padding: 1em 0;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  .brandTitle ~ input:checked ~ .brandList {
+    display: block;
+    height: auto;
+  }
+
+  .btnClose {
+    font-size: 2em;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 0 0 0.3em;
+  }
+
+  .brandListItem:hover,
+  .inputBrand:checked + label {
+    color: #000;
+  }
+
+  .productsContainer__btn {
+    font-size: 2em;
+  }
+}

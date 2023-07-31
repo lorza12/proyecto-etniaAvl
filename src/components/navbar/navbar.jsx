@@ -46,7 +46,7 @@ function NavBar() {
           <Link href={"/about"}>
             <p className={prompt.className}>Compañia</p>
           </Link>
-          <Link href={"/brans"}>
+          <Link href={"/brands"}>
             <p className={prompt.className}>Marcas</p>
           </Link>
         </div>

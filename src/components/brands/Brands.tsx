@@ -2,9 +2,9 @@ import Head from "next/head";
 import styles from "@/styles/Brands.module.css";
 import Image from "next/image";
 import { Prompt, Lato } from "next/font/google";
-import brand1 from "../../../public/assets/descargammmmm-removebg-preview.png";
-import brand2 from "../../../public/assets/descarga-removebg-preview.png";
-import brand3 from "../../../public/assets/descarga__1_-removebg-preview.png";
+import brand1 from "../../../public/assets/brands-logos/104a04d9-e509-4ea5-ad82-d06c7bdf3a07.png";
+import brand2 from "../../../public/assets/brands-logos/104a04d9-e509-4ea5-ad82-d06c7bdf3a07.png";
+import brand3 from "../../../public/assets/brands-logos/104a04d9-e509-4ea5-ad82-d06c7bdf3a07.png";
 
 const prompt = Prompt({
   subsets: ["latin"],
