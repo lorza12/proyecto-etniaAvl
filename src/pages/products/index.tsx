@@ -7,7 +7,7 @@ import Image from "next/image";
 import { products as prod } from "../../assets/dataProducts";
 import styles from "./Products.module.css";
 import { useEffect, useId, useRef, useState } from "react";
-// import { montserrat } from "@/styles/fonts";
+import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { AiOutlineDown } from "react-icons/ai";
 
@@ -127,12 +127,12 @@ const Products = () => {
         <link rel="icon" href="/logoIcon1.ico" />
       </Head>
       <div className={styles.productsGlobalContainer}>
-        <h1>/ PRODUCTS /</h1>
+        <h1 className={montserrat.className}>/ PRODUCTOS /</h1>
         <div className={styles.productsWrapper}>
           <div className={styles.brandContainer}>
             <label htmlFor={brandCheckboxId} className={styles.brandTitle}>
-              <h3>
-                Brands <AiOutlineDown />
+              <h3 className={montserrat.className}>
+                Marcas <AiOutlineDown />
               </h3>
             </label>
             <input
@@ -144,7 +144,7 @@ const Products = () => {
             />
             <ul className={styles.brandList}>
               <li className={styles.brandListItem}>
-                <div>
+                <div className={montserrat.className}>
                   <input
                     type="radio"
                     name="brand"
@@ -154,12 +154,12 @@ const Products = () => {
                     className={styles.inputBrand}
                     onChange={handleRadioChange}
                   />
-                  <label htmlFor="all">All</label>
+                  <label htmlFor="all">TODAS</label>
                 </div>
               </li>
               {brandType.map((brand, idx) => (
                 <li key={idx} className={styles.brandListItem}>
-                  <div>
+                  <div className={montserrat.className}>
                     <input
                       type="radio"
                       name="brand"
@@ -202,8 +202,8 @@ const Products = () => {
                       className={styles.productImage}
                     ></Image>
                   </Link>
-                  <h2>{product.name}</h2>
-                  <p>{product.tags}</p>
+                  <h2 className={montserrat.className}>{product.name}</h2>
+                  <p className={montserrat.className}>{product.tags}</p>
                   <br />
 
                   <Link

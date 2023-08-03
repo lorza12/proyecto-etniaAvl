@@ -45,11 +45,6 @@ function Products() {
                       width={300}
                       height={250}
                     />
-                    <div className={styles.pading__heareIcon}>
-                      <div className={styles.heartIcon}>
-                        <GiCheckMark fontSize={22} color="#ffffff" />
-                      </div>
-                    </div>
                   </div>
 
                   <div

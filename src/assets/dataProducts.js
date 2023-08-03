@@ -4,7 +4,7 @@ export const products = [
     category: "Lightshark Controllers",
     name: "LS 1",
     tags: "Led, LED Effects / Special Effects, Lighting, Lightshark Controllers, LS-1, Theatrical",
-    image: "/assets/lightshark-img/LightShark_pers.jpg",
+    image: "/assets/lightshark-img/LightShark_pers.PNG",
     brand: "lightshark",
     description:
       "The power of the LightShark engine combined with a complete hardware surface.The LS-1 brings together the best features from the world of the LightShark software engine and marries them to an intuitive, ergonomic hardware control surface. 4 encoders, 10 master playbacks and a color built-in display, combined with a complete set of RGB buttons, give the users a full console platform able to manage incredible shows in a very reduced size, which is compatible with airplane carry-on luggage.",
@@ -83,7 +83,7 @@ export const products = [
     category: "Lightshark Controllers",
     name: "LS-Wing",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, Lighting, Lightshark Controllers, LS-Wing",
-    image: "/assets/lightshark-img/LS-Wing-1.png",
+    image: "/assets/lightshark-img/LS-Wing-1.PNG",
     brand: "lightshark",
     description:
       "LS-Wing is an innovative hardware which offers several products in one: A Wing for LS-1 / LS -Core, an OSC/UDP hardware controller, a MIDI controller and a user programmable remote controller. ",
@@ -144,7 +144,7 @@ export const products = [
     category: "Lightshark Controllers",
     name: "LS-Core",
     tags: "Led, LED Effects / Special Effects, Lighting, Lightshark Controllers, LS-Core",
-    image: "/assets/lightshark-img/LS_CORE_pers.jpg",
+    image: "/assets/lightshark-img/LS_CORE_pers.PNG",
     brand: "lightshark",
     description:
       "The smallest 8-universe lighting console in the world. LS-Core is the smallest 8 universe lighting console in the market, bringing a built-in hardware with the LightShark engine including all its features. A USB-host input is available to connect a MIDI surface hardware to use real faders and buttons.",
@@ -219,7 +219,7 @@ export const products = [
     category: "Lightshark Controllers",
     name: "LS-Nodes",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, Lighting, Lightshark Controllers, LS-Nodes, Theatrical",
-    image: "/assets/lightshark-img/LS-Nodes-2-removebg-preview.png",
+    image: "/assets/lightshark-img/LS-Nodes-2-removebg-preview.PNG",
     brand: "lightshark",
     description:
       "The LS-Node series is the new RDM/DMX streaming range from WORK PRO that supports industry standards ArtNet & sACN. They feature from 1 up to 4 DMX universes, with 3 different models: LS-Node1, LS-Node2 & LS-Node4, each of which adds its respective number of freely configurable DMX universes. ",
@@ -242,7 +242,7 @@ export const products = [
     category: "Lightshark Controllers",
     name: "LS-1 Case",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, Lighting, LS-1 Case",
-    image: "/assets/lightshark-img/LSC_1544_T_open.jpg",
+    image: "/assets/lightshark-img/LSC_1544_T_open.PNG",
     brand: "lightshark",
     description: "LS-1 Case: Road Case for LS-1.",
     description2: "",
@@ -259,7 +259,7 @@ export const products = [
     category: "WORK PRO Lifters, LW Series (Center Loaded)",
     name: "LW 155D",
     tags: "Led, Lighting, LW 155D, Work Pro Lifters",
-    image: "/assets/workpro-img/LW_155_D-Abierta_20171020100546.jpg",
+    image: "/assets/workpro-img/LW_155_D-Abierta_20171020100546.PNG",
     brand: "workpro-lifters",
     description:
       "LW 155D. WORK PRO LIFTERS has redesigned the well-known LW series in order to comply with the DIN 56950 standard, becoming the LW D /DY Series. The LW-D /DY Series incorporates the innovative Wire Drive system, which has been developed in order to prevent undesired and dangerous cable crosses in the drum of the winch, making easier the roll up/unroll process and avoiding crashing or fraying that could reduce the useful life of the cable or (in the worst case) its breakage.",
@@ -321,7 +321,7 @@ export const products = [
     category: "WORK PRO Lifters, LW Series (Center Loaded)",
     name: "LW 265D",
     tags: "Led, Lighting, LW 265D, Work Pro Lifters",
-    image: "/assets/workpro-img/LW-290-1.png",
+    image: "/assets/workpro-img/LW-290-1.PNG",
     brand: "workpro-lifters",
     description:
       "LW 265D. WORK PRO LIFTERS has redesigned the well-known LW series in order to comply with the DIN 56950 standard, becoming the LW D /DY Series. The LW-D /DY Series incorporates the innovative Wire Drive system, which has been developed in order to prevent undesired and dangerous cable crosses in the drum of the winch, making easier the roll up/unroll process and avoiding crashing or fraying that could reduce the useful life of the cable or (in the worst case) its breakage.",
@@ -383,7 +383,7 @@ export const products = [
     category: "WORK PRO Lifters, LW Series (Center Loaded)",
     name: "LW 290D",
     tags: "Led, Lighting, LW 290D, Work Pro Lifters",
-    image: "/assets/workpro-img/LW-290-4.png",
+    image: "/assets/workpro-img/LW-290-4.PNG",
     brand: "workpro-lifters",
     description:
       "LW 290D. WORK PRO LIFTERS has redesigned the well-known LW series in order to comply with the DIN 56950 standard, becoming the LW D /DY Series. The LW-D /DY Series incorporates the innovative Wire Drive system, which has been developed in order to prevent undesired and dangerous cable crosses in the drum of the winch, making easier the roll up/unroll process and avoiding crashing or fraying that could reduce the useful life of the cable or (in the worst case) its breakage.",
@@ -445,7 +445,7 @@ export const products = [
     category: "WORK PRO Lifters, WTS Series (Front Loaded)",
     name: "WTS 506",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, Lighting, Work Pro Lifters, WTS 506",
-    image: "/assets/workpro-img/WTS_506-e1676499676148.jpg",
+    image: "/assets/workpro-img/WTS_506-e1676499676148.PNG",
     brand: "workpro-lifters",
     description:
       "WTS 506. The WTS Series means a change of concept within the front load towers, as it introduces the new Structural Mode. This Structural Mode does not use the winch to lift the load, but involves lifting the load with the help of a manual or electric hoist. That is, the tower is used as a structure that is all locked to the required working height. Once the tower is raised to this desired height, the load must be raised with the hoist. ",
@@ -1651,7 +1651,7 @@ export const products = [
     category: "",
     name: "ENTAR 15 SUB",
     tags: "Passive subwoofer 700 W @ 8 Ohm",
-    image: "/assets/equipson-img/entarsub15_w_20230504133648.png",
+    image: "/assets/equipson-img/entarsub15_w_20230504133648.PNG",
     brand: "workpro-sound",
     description:
       "ENTAR 15 SUB is a 700 W passive subwoofer at 8 Ohm, incorporating an 15'' loudspeaker, made of high density wood. It has XLN4 connections, side carrying handles and 35 mm diameter top insert for support.",
@@ -2496,7 +2496,7 @@ export const products = [
     name: "WFS 5 CX B",
     tags: "200W audio projector. IP 66 70/100V line - 8 Ohm",
     image:
-      "/assets/equipson-img/WFS_5CX_B_FRONT_WEB_20221121114257-removebg-preview.png",
+      "/assets/equipson-img/WFS_5CX_B_FRONT_WEB_20221121114257-removebg-preview.PNG",
     brand: "workpro-sound",
     description:
       "WFS 5 CX is an audio projector that has been designed for outdoor applications. It incorporates a 10'' coaxial transducer and a 1'' compression driver. Its high IP rating (IP 66) makes it suitable for sports facilities, recreational areas, etc. Its two connection modes (low impedance 8 Ohm and 70/100V line) allow to adjust the device for different acoustic solutions. WFS 5 CX is also available in white color.",
@@ -3008,7 +3008,7 @@ export const products = [
     category: "",
     name: "ENTAR 18 SUB",
     tags: "Passive subwoofer 1800 W @ 8 Ohm.",
-    image: "/assets/equipson-img/entar_sub18_w_20230504133358.png",
+    image: "/assets/equipson-img/entar_sub18_w_20230504133358.PNG",
     brand: "workpro-sound",
     description:
       "ENTAR 18 SUB is a 1000 W passive subwoofer at 8 Ohm, incorporating an 18'' loudspeaker, made of high density wood. It has XLN4 connections, side carrying handles and 35 mm diameter top insert for support.",
@@ -3144,7 +3144,7 @@ export const products = [
     category: "",
     name: "NEO 6 MARINE",
     tags: "IP65 60W installation loudspeaker (32W@100V line)",
-    image: "/assets/equipson-img/NEO MARINE 1_20230627182449.png",
+    image: "/assets/equipson-img/NEO MARINE 1_20230627182449.PNG",
     brand: "workpro-sound",
     description:
       "NEO 6 IP is a 2-way acoustic box made of ABS plastic and white, specially designed for outdoor installation with a degree of protection IP 65. It is composed of a 6.5 '' speaker and a tweeter of 1''. It can be used both in 70/100 V installations and in low impedance installations. When a speaker is connected at low impedance the audio does not pass through the transformer in order to maintain a high level of quality. NEO 6 IP is also very simple and quick to install, thanks to the new bracket designed exclusively for this model, which also allows a quick orientation of the box on both axes. Sold in pairs (two passive boxes).",
@@ -3226,187 +3226,7 @@ export const products = [
       },
     ],
   },
-  {
-    id: 62,
-    category: "G-Truss, Spigot Truss",
-    name: "290mm/Square Truss",
-    tags: "Our 290mm GT-Truss (GT-290) is a 4-point truss system.",
-    image: "/assets/g-truss/EC-40_PRO_Persp_20161005104542.jpeg",
-    brand: "G-Truss",
-    description:
-      "This provides optimum volume and load capacity for its construction size and a tube diameter of 50mm. This system is connected via a special conical connector system, which is joined together to a complete form fit by means of a copper hammer, creating optimal traction. It is also characterized by a minimum transport volume and the special lightweight design. The conical connectors are of course included in the scope of delivery – special designs and powder coatings can be carried out at short notice. This size truss is meant for a more light duty design.",
-    description2: "",
-    feactures: [
-      "Color Options: Silver or Black (Powder Coated)",
-      "Size Options: 1m/2m/3m",
-    ],
-    specifications: [
-      {
-        name: "Main Tube Section",
-        values: "50 x 2 mm",
-      },
-      {
-        name: "Main Tube Alloy ",
-        values: "EN AW 6082T6",
-      },
-      {
-        name: "Braces Section",
-        values: "20 x 2 mm",
-      },
-      {
-        name: "Braces Alloy",
-        values: "EN AW 6082T6",
-      },
-      {
-        name: "weigth",
-        values: "4,368 lb/ft",
-      },
-      {
-        name: "Surface Area Complete Truss",
-        values: "1,8693 in2",
-      },
-      {
-        name: "Coupling System",
-        values: "CBC50E",
-      },
-      {
-        name: "1.64 feet - Weigth",
-        values: "11,464 lb",
-      },
-      {
-        name: "3.28 feet - Weigth",
-        values: "17,637 lb",
-      },
-      {
-        name: "6.56 feet - Weigth",
-        values: "26,455 lb",
-      },
-      {
-        name: "9.84 feet - Weigth",
-        values: "35,715 lb",
-      },
-      {
-        name: "1.64 feet - Weigth",
-        values: "1,4867 lb",
-      },
-      {
-        name: "3.28 feet - Weigth",
-        values: "2,97 lb",
-      },
-      {
-        name: "6.56 feet - Weigth",
-        values: "5,9399 lb",
-      },
-      {
-        name: "9.84 feet - Weigth",
-        values: "8,9099 lb",
-      },
-    ],
-  },
-  {
-    id: 63,
-    category: "G-Truss, Spigot Truss",
-    name: "290mm/6 Way Cube",
-    tags: "G-Truss, GT-290mm, Led, Lighting",
-    image: "/assets/g-truss/Truss-Cube-Silver.png2_.png",
-    brand: "G-Truss",
-    description:
-      "Our GT-290mm 6 Way Cube is a perfect corner/junction piece. Having the capability to connect 6 pieces of our 290mm truss. When purchased, it comes with 8 connectors which is enough for 2 sides of the 6 way cube. Additional connectors can be purchased in our “Accessories” section.",
-    description2: "",
-    feactures: [],
-    specifications: [
-      {
-        name: "Colors",
-        values: "Black, Silver",
-      },
-    ],
-  },
-  {
-    id: 64,
-    category: "G-Truss, Spigot Truss",
-    name: "400mm/Square Truss",
-    tags: "G-Truss, GT-400mm, Lighting, Square Truss",
-    image: "/assets/g-truss/EC-40_PRO_Persp_20161005104542.jpeg",
-    brand: "G-Truss",
-    description:
-      "Our 400mm GT-Truss (GT-400) is a 4-point truss system. This provides optimum volume and load capacity for its construction size and a tube diameter of 50mm. This system is connected via a special conical connector system, which is joined together to a complete form fit by means of a copper hammer, creating optimal traction. It is also characterized by a minimum transport volume and the special lightweight design. The conical connectors are of course included in the scope of delivery – special designs and powder coatings can be carried out at short notice. This size truss offer a higher load capacity compared to any of our other sizes.",
-    description2: "",
-    feactures: ["Color Options: Silver or Black", "Size Options: 1m/2m/3m"],
-    specifications: [
-      {
-        name: "Pipe Diameter",
-        values: "50 mm",
-      },
-      {
-        name: "Wall Thickness",
-        values: "2  mm",
-      },
-      {
-        name: "0.5 m",
-        values: "10.8lbs/4.90kgs",
-      },
-      {
-        name: "1m",
-        values: "16.5lbs/7.50kgs",
-      },
-      {
-        name: "2m",
-        values: "26.4lbs/12.00kgs",
-      },
-      {
-        name: "3m",
-        values: "35.2/16.00kgs",
-      },
-      {
-        name: "Colors",
-        values: "Black, Silver",
-      },
-      {
-        name: "Size Option",
-        values: "1 m, 2 m, 3 m",
-      },
-    ],
-  },
-  {
-    id: 65,
-    category: "G-Truss, Spigot Truss",
-    name: "400mm/6 Way Cube",
-    tags: " G-Truss, GT-400mm, Led, LED Effects / Special Effects, LED Pars/Bars, Lighting, Theatrical",
-    image: "/assets/g-truss/cube-29-pro_20211027092329.jpeg",
-    brand: "G-Truss",
-    description:
-      "Our GT-400mm 6 Way Cube is a perfect corner/junction piece. Having the capability to connect 6 pieces of our 400mm truss. When purchased, it comes with 8 connectors which is enough for 2 sides of the 6 way cube. Additional connectors can be purchased in our “Accessories” section.",
-    description2: "",
-    feactures: [],
-    specifications: [
-      {
-        name: "Colors",
-        values: "Black, Silver",
-      },
-    ],
-  },
-  {
-    id: 66,
-    category: "G-Truss, Spigot Truss",
-    name: "Universal Steel Base Plate",
-    tags: " (24x24”), G-Truss, GT- Universal, Led, LED Effects / Special Effects, LED Pars/Bars, Lighting, Moving Heads, Steel Base Plate, Theatrical",
-    image: "/assets/g-truss/WCX_4C_pers_20180328113641.jpeg",
-    brand: "G-Truss",
-    description:
-      "Our GT-Universal Steel Base Plate is heavy duty and fits a variety of different truss sizes. Made with 4 diagonal slits, this allows the connector to adjust to your size truss. Also made with 6mm thick steel and coming in two different sizes. The first option is a 24×24″ base and the second is a 36×24″ base. Ideal for any truss structure that needs stability and a base that can handle heavy loads.",
-    description2: "",
-    feactures: [
-      "6mm Steel Thickness",
-      "Size Options: 24×24″/ 36×24″",
-      "Heavy Duty Application",
-      "Universal Fitting: Can fit our 290mm & our 400mm Truss sizes due to its diagonal slits",
-      "4 Base connectors included",
-      "Steel Base Plate290mm/12x12''",
-      "Steel Base Plate 600x600mm (24x24'')",
-      "Steel Base Plate 600x900mm (24x36'')",
-    ],
-    specifications: [],
-  },
+
   {
     id: 67,
     category: "",
@@ -3863,7 +3683,7 @@ export const products = [
     category: "",
     name: "SYNTHEA 2125",
     tags: "2x125W @4 ohm / 1x250W (100V line) amplifier.",
-    image: "/assets/equipson-img/synthea_2125_front_web_20230418161843.png",
+    image: "/assets/equipson-img/synthea_2125_front_web_20230418161843.PNG",
     brand: "workpro-sound",
     description:
       "Compact two-channel 4 ohm installation amplifier (up to 125W per channel) or 250W on a 100V line output. Digital signal input and output for easy interconnection without conversions. Dedicated DSP with full connectivity and control via stand-alone Wi-Fi. Ethernet and GPIO",
@@ -3972,7 +3792,7 @@ export const products = [
     category: "",
     name: "SYNTHEA 4125",
     tags: "4x125W @4 ohm / 2x250W (100V line) amplifier. DSP.",
-    image: "/assets/equipson-img/synthea_2125_front_web_20230418161843.png",
+    image: "/assets/equipson-img/synthea_2125_front_web_20230418161843.PNG",
     brand: "workpro-sound",
     description:
       "Compact four-channel 4 ohm installation amplifier (up to 125W per channel) or 250W on each of the two 100V line output. Digital signal input and output for easy interconnection without conversions. Dedicated DSP with full connectivity and control via stand-alone Wi-Fi. Ethernet and GPIO",
@@ -4735,7 +4555,7 @@ export const products = [
     name: "MPE 50",
     tags: "Passive suspension loudspeaker. IP66",
     image:
-      "/assets/equipson-img/MPE-50_ByN_20210921165211-removebg-preview.png",
+      "/assets/equipson-img/MPE-50_ByN_20210921165211-removebg-preview.PNG",
     brand: "workpro-sound",
     description:
       "MPE 50 is a passive (pendant) loudspeaker IP66 range. It is a coaxial, two-way and full range 40 W @ 8 Ohm system, which can also work on 70/100 V lines supporting powers of 3.75W / 7.5W / 15W / 30W, suitable for complex acoustic environments such as shopping malls, places of worship, restaurants, conference centers, hotels, airports, train stations, swimming pools, conference rooms or museums, where high ceilings create a highly reverberant sound field. Each unit uses a 5.25 '' speaker, and a 1 '' diameter coaxial driver. It is available in black and white, and installation accessories are included.",
@@ -4819,7 +4639,7 @@ export const products = [
     name: "MPE 65",
     tags: "Passive suspension loudspeaker. IP66",
     image:
-      "/assets/equipson-img/MPE-50_ByN_20210921165211-removebg-preview.png",
+      "/assets/equipson-img/MPE-50_ByN_20210921165211-removebg-preview.PNG",
     brand: "workpro-sound",
     description:
       "MPE 65 is a passive (pendant) loudspeaker with an IP66 range. It is a coaxial, two-way and full-range 40 W @ 8 Ohm system, which can also work on 70/100 V lines supporting 5W / 10W / 15W / 20W / 40W powers, suitable for complex acoustic environments such as shopping malls, places of worship, restaurants, conference centers, hotels, airports, train stations, swimming pools, conference rooms or museums, where high ceilings create a highly reverberant sound field. Each unit uses a 6.5'' speaker, and a 1'' diameter coaxial driver. It is available in black and white, and installation accessories are included.",
@@ -5043,7 +4863,7 @@ export const products = [
     name: "Bolt Truss",
     tags: "Bolt Truss (12×12″)",
     image: "/assets/g-truss/Thomas-Truss.jpg",
-    brand: "G-Truss",
+    brand: "",
     description:
       "Our Bolt Truss is a 4 point truss system that is optimal for a heavier duty setup/load than your typical spigot truss. This system is put together with a nut & screw system through its plated edges to join sections together and create the size you desire. This is ideal for any users that are looking to hang medium to heavy loads on the truss.",
     description2: "",
@@ -5078,8 +4898,8 @@ export const products = [
     name: "LED Wall Ground Support",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, LED Wall Ground Support, Lighting",
     image:
-      "/assets/g-truss/led_video_wall_ground_support_4-removebg-preview.png",
-    brand: "G-Truss",
+      "/assets/g-truss/led_video_wall_ground_support_4-removebg-preview.PNG",
+    brand: "",
     description:
       "LED Wall Ground Support. Stacking a LED screen at the ground is now a simple task with SPLFT.  SPLFT is a modulable system that combines a steel base with a 29 cm ladder truss and a multiconnection plate capable to get connected to any LED screen. Equipped with two adjustable feet at the front and one at the back of the base in order to perfectly balance the LED screen in combination with a bubble level fitted on it. It’s also very flexible as it can be settled for different LED screen configurations with different heights and widths. ",
     description2:

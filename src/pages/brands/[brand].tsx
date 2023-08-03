@@ -66,7 +66,7 @@ const BrandsDetail = () => {
       <main className={styles.productsContainer__main}>
         <section>
           <h1 className={`${montserrat.className} ${styles.title}`}>
-            Product details {brand}
+            / {brand} /
           </h1>
         </section>
         <section>

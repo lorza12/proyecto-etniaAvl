@@ -45,7 +45,7 @@ function KnowUs() {
                 experiencias <b className={styles.b}> únicas</b> y
                 <b className={styles.b}> memorables</b>.
               </p>
-              <Link href={"/about"}>
+              <Link href={"/"}>
                 {" "}
                 <button
                   type="button"

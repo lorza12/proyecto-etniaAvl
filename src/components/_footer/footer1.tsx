@@ -26,7 +26,7 @@ function Footer() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.footerContainer}>
+      <main className={styles.footerContainer} id="footer">
         <section className={prompt.className}>
           <section className={styles.footerContainer__section1}>
             <article className={styles.footerContainer__section1__inf}>

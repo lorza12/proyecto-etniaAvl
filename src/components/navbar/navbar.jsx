@@ -43,11 +43,11 @@ function NavBar() {
           <Link href={"/products"}>
             <p className={prompt.className}>Productos</p>
           </Link>
-          <Link href={"/about"}>
-            <p className={prompt.className}>Compañia</p>
-          </Link>
           <Link href={"/brands"}>
             <p className={prompt.className}>Marcas</p>
+          </Link>
+          <Link href={"#footer"}>
+            <p className={prompt.className}>Contacto</p>
           </Link>
         </div>
         <div className={styles.navBarContainer__option2}>

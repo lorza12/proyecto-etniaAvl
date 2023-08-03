@@ -36,7 +36,7 @@ import Image from "next/image";
 import styles from "@/styles/ProductDetailPage.module.css";
 import { useRouter } from "next/router";
 import { products as produ } from "../../assets/dataProducts";
-// import { montserrat } from "@/styles/fonts";
+import { montserrat } from "@/styles/fonts";
 import { GrTextAlignCenter } from "react-icons/gr";
 
 const ProductDetailPage = () => {
@@ -53,7 +53,7 @@ const ProductDetailPage = () => {
         <link rel="icon" href="/logoIcon1.ico" />
       </Head>
 
-      <main>
+      <main className={montserrat.className}>
         {product.map((item) => (
           <>
             <section className={styles.ProductDetailContainer}>
