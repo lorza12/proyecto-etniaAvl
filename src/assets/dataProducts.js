@@ -144,7 +144,7 @@ export const products = [
     category: "Lightshark Controllers",
     name: "LS-Core",
     tags: "Led, LED Effects / Special Effects, Lighting, Lightshark Controllers, LS-Core",
-    image: "/assets/lightshark-img/LS_CORE_pers.PNG",
+    image: "/assets/lightshark-img/LS_CORE_pers.png",
     brand: "lightshark",
     description:
       "The smallest 8-universe lighting console in the world. LS-Core is the smallest 8 universe lighting console in the market, bringing a built-in hardware with the LightShark engine including all its features. A USB-host input is available to connect a MIDI surface hardware to use real faders and buttons.",
@@ -219,7 +219,7 @@ export const products = [
     category: "Lightshark Controllers",
     name: "LS-Nodes",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, Lighting, Lightshark Controllers, LS-Nodes, Theatrical",
-    image: "/assets/lightshark-img/LS-Nodes-2-removebg-preview.PNG",
+    image: "/assets/lightshark-img/LS-Nodes-2-removebg-preview.png",
     brand: "lightshark",
     description:
       "The LS-Node series is the new RDM/DMX streaming range from WORK PRO that supports industry standards ArtNet & sACN. They feature from 1 up to 4 DMX universes, with 3 different models: LS-Node1, LS-Node2 & LS-Node4, each of which adds its respective number of freely configurable DMX universes. ",
@@ -242,7 +242,7 @@ export const products = [
     category: "Lightshark Controllers",
     name: "LS-1 Case",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, Lighting, LS-1 Case",
-    image: "/assets/lightshark-img/LSC_1544_T_open.PNG",
+    image: "/assets/lightshark-img/LSC_1544_T_open.png",
     brand: "lightshark",
     description: "LS-1 Case: Road Case for LS-1.",
     description2: "",
@@ -259,7 +259,7 @@ export const products = [
     category: "WORK PRO Lifters, LW Series (Center Loaded)",
     name: "LW 155D",
     tags: "Led, Lighting, LW 155D, Work Pro Lifters",
-    image: "/assets/workpro-img/LW_155_D-Abierta_20171020100546.PNG",
+    image: "/assets/workpro-img/LW_155_D-Abierta_20171020100546.png",
     brand: "workpro-lifters",
     description:
       "LW 155D. WORK PRO LIFTERS has redesigned the well-known LW series in order to comply with the DIN 56950 standard, becoming the LW D /DY Series. The LW-D /DY Series incorporates the innovative Wire Drive system, which has been developed in order to prevent undesired and dangerous cable crosses in the drum of the winch, making easier the roll up/unroll process and avoiding crashing or fraying that could reduce the useful life of the cable or (in the worst case) its breakage.",
@@ -321,7 +321,7 @@ export const products = [
     category: "WORK PRO Lifters, LW Series (Center Loaded)",
     name: "LW 265D",
     tags: "Led, Lighting, LW 265D, Work Pro Lifters",
-    image: "/assets/workpro-img/LW-290-1.PNG",
+    image: "/assets/workpro-img/LW-290-1.png",
     brand: "workpro-lifters",
     description:
       "LW 265D. WORK PRO LIFTERS has redesigned the well-known LW series in order to comply with the DIN 56950 standard, becoming the LW D /DY Series. The LW-D /DY Series incorporates the innovative Wire Drive system, which has been developed in order to prevent undesired and dangerous cable crosses in the drum of the winch, making easier the roll up/unroll process and avoiding crashing or fraying that could reduce the useful life of the cable or (in the worst case) its breakage.",
@@ -383,7 +383,7 @@ export const products = [
     category: "WORK PRO Lifters, LW Series (Center Loaded)",
     name: "LW 290D",
     tags: "Led, Lighting, LW 290D, Work Pro Lifters",
-    image: "/assets/workpro-img/LW-290-4.PNG",
+    image: "/assets/workpro-img/LW-290-4.png",
     brand: "workpro-lifters",
     description:
       "LW 290D. WORK PRO LIFTERS has redesigned the well-known LW series in order to comply with the DIN 56950 standard, becoming the LW D /DY Series. The LW-D /DY Series incorporates the innovative Wire Drive system, which has been developed in order to prevent undesired and dangerous cable crosses in the drum of the winch, making easier the roll up/unroll process and avoiding crashing or fraying that could reduce the useful life of the cable or (in the worst case) its breakage.",
@@ -445,7 +445,7 @@ export const products = [
     category: "WORK PRO Lifters, WTS Series (Front Loaded)",
     name: "WTS 506",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, Lighting, Work Pro Lifters, WTS 506",
-    image: "/assets/workpro-img/WTS_506-e1676499676148.PNG",
+    image: "/assets/workpro-img/WTS_506-e1676499676148.png",
     brand: "workpro-lifters",
     description:
       "WTS 506. The WTS Series means a change of concept within the front load towers, as it introduces the new Structural Mode. This Structural Mode does not use the winch to lift the load, but involves lifting the load with the help of a manual or electric hoist. That is, the tower is used as a structure that is all locked to the required working height. Once the tower is raised to this desired height, the load must be raised with the hoist. ",
@@ -1651,7 +1651,7 @@ export const products = [
     category: "",
     name: "ENTAR 15 SUB",
     tags: "Passive subwoofer 700 W @ 8 Ohm",
-    image: "/assets/equipson-img/entarsub15_w_20230504133648.PNG",
+    image: "/assets/equipson-img/entarsub15_w_20230504133648.png",
     brand: "workpro-sound",
     description:
       "ENTAR 15 SUB is a 700 W passive subwoofer at 8 Ohm, incorporating an 15'' loudspeaker, made of high density wood. It has XLN4 connections, side carrying handles and 35 mm diameter top insert for support.",
@@ -2496,7 +2496,7 @@ export const products = [
     name: "WFS 5 CX B",
     tags: "200W audio projector. IP 66 70/100V line - 8 Ohm",
     image:
-      "/assets/equipson-img/WFS_5CX_B_FRONT_WEB_20221121114257-removebg-preview.PNG",
+      "/assets/equipson-img/WFS_5CX_B_FRONT_WEB_20221121114257-removebg-preview.png",
     brand: "workpro-sound",
     description:
       "WFS 5 CX is an audio projector that has been designed for outdoor applications. It incorporates a 10'' coaxial transducer and a 1'' compression driver. Its high IP rating (IP 66) makes it suitable for sports facilities, recreational areas, etc. Its two connection modes (low impedance 8 Ohm and 70/100V line) allow to adjust the device for different acoustic solutions. WFS 5 CX is also available in white color.",
@@ -3008,7 +3008,7 @@ export const products = [
     category: "",
     name: "ENTAR 18 SUB",
     tags: "Passive subwoofer 1800 W @ 8 Ohm.",
-    image: "/assets/equipson-img/entar_sub18_w_20230504133358.PNG",
+    image: "/assets/equipson-img/entar_sub18_w_20230504133358.png",
     brand: "workpro-sound",
     description:
       "ENTAR 18 SUB is a 1000 W passive subwoofer at 8 Ohm, incorporating an 18'' loudspeaker, made of high density wood. It has XLN4 connections, side carrying handles and 35 mm diameter top insert for support.",
@@ -3144,7 +3144,7 @@ export const products = [
     category: "",
     name: "NEO 6 MARINE",
     tags: "IP65 60W installation loudspeaker (32W@100V line)",
-    image: "/assets/equipson-img/NEO MARINE 1_20230627182449.PNG",
+    image: "/assets/equipson-img/NEO MARINE 1_20230627182449.png",
     brand: "workpro-sound",
     description:
       "NEO 6 IP is a 2-way acoustic box made of ABS plastic and white, specially designed for outdoor installation with a degree of protection IP 65. It is composed of a 6.5 '' speaker and a tweeter of 1''. It can be used both in 70/100 V installations and in low impedance installations. When a speaker is connected at low impedance the audio does not pass through the transformer in order to maintain a high level of quality. NEO 6 IP is also very simple and quick to install, thanks to the new bracket designed exclusively for this model, which also allows a quick orientation of the box on both axes. Sold in pairs (two passive boxes).",
@@ -3683,7 +3683,7 @@ export const products = [
     category: "",
     name: "SYNTHEA 2125",
     tags: "2x125W @4 ohm / 1x250W (100V line) amplifier.",
-    image: "/assets/equipson-img/synthea_2125_front_web_20230418161843.PNG",
+    image: "/assets/equipson-img/synthea_2125_front_web_20230418161843.png",
     brand: "workpro-sound",
     description:
       "Compact two-channel 4 ohm installation amplifier (up to 125W per channel) or 250W on a 100V line output. Digital signal input and output for easy interconnection without conversions. Dedicated DSP with full connectivity and control via stand-alone Wi-Fi. Ethernet and GPIO",
@@ -3792,7 +3792,7 @@ export const products = [
     category: "",
     name: "SYNTHEA 4125",
     tags: "4x125W @4 ohm / 2x250W (100V line) amplifier. DSP.",
-    image: "/assets/equipson-img/synthea_2125_front_web_20230418161843.PNG",
+    image: "/assets/equipson-img/synthea_2125_front_web_20230418161843.png",
     brand: "workpro-sound",
     description:
       "Compact four-channel 4 ohm installation amplifier (up to 125W per channel) or 250W on each of the two 100V line output. Digital signal input and output for easy interconnection without conversions. Dedicated DSP with full connectivity and control via stand-alone Wi-Fi. Ethernet and GPIO",
@@ -4555,7 +4555,7 @@ export const products = [
     name: "MPE 50",
     tags: "Passive suspension loudspeaker. IP66",
     image:
-      "/assets/equipson-img/MPE-50_ByN_20210921165211-removebg-preview.PNG",
+      "/assets/equipson-img/MPE-50_ByN_20210921165211-removebg-preview.png",
     brand: "workpro-sound",
     description:
       "MPE 50 is a passive (pendant) loudspeaker IP66 range. It is a coaxial, two-way and full range 40 W @ 8 Ohm system, which can also work on 70/100 V lines supporting powers of 3.75W / 7.5W / 15W / 30W, suitable for complex acoustic environments such as shopping malls, places of worship, restaurants, conference centers, hotels, airports, train stations, swimming pools, conference rooms or museums, where high ceilings create a highly reverberant sound field. Each unit uses a 5.25 '' speaker, and a 1 '' diameter coaxial driver. It is available in black and white, and installation accessories are included.",
@@ -4639,7 +4639,7 @@ export const products = [
     name: "MPE 65",
     tags: "Passive suspension loudspeaker. IP66",
     image:
-      "/assets/equipson-img/MPE-50_ByN_20210921165211-removebg-preview.PNG",
+      "/assets/equipson-img/MPE-50_ByN_20210921165211-removebg-preview.png",
     brand: "workpro-sound",
     description:
       "MPE 65 is a passive (pendant) loudspeaker with an IP66 range. It is a coaxial, two-way and full-range 40 W @ 8 Ohm system, which can also work on 70/100 V lines supporting 5W / 10W / 15W / 20W / 40W powers, suitable for complex acoustic environments such as shopping malls, places of worship, restaurants, conference centers, hotels, airports, train stations, swimming pools, conference rooms or museums, where high ceilings create a highly reverberant sound field. Each unit uses a 6.5'' speaker, and a 1'' diameter coaxial driver. It is available in black and white, and installation accessories are included.",
@@ -4898,7 +4898,7 @@ export const products = [
     name: "LED Wall Ground Support",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, LED Wall Ground Support, Lighting",
     image:
-      "/assets/g-truss/led_video_wall_ground_support_4-removebg-preview.PNG",
+      "/assets/g-truss/led_video_wall_ground_support_4-removebg-preview.png",
     brand: "",
     description:
       "LED Wall Ground Support. Stacking a LED screen at the ground is now a simple task with SPLFT.  SPLFT is a modulable system that combines a steel base with a 29 cm ladder truss and a multiconnection plate capable to get connected to any LED screen. Equipped with two adjustable feet at the front and one at the back of the base in order to perfectly balance the LED screen in combination with a bubble level fitted on it. It’s also very flexible as it can be settled for different LED screen configurations with different heights and widths. ",
