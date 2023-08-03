@@ -4,7 +4,7 @@ export const products = [
     category: "Lightshark Controllers",
     name: "LS 1",
     tags: "Led, LED Effects / Special Effects, Lighting, Lightshark Controllers, LS-1, Theatrical",
-    image: "/assets/lightshark-img/LightShark_pers.PNG",
+    image: "/assets/lightshark-img/LightShark_pers.png",
     brand: "lightshark",
     description:
       "The power of the LightShark engine combined with a complete hardware surface.The LS-1 brings together the best features from the world of the LightShark software engine and marries them to an intuitive, ergonomic hardware control surface. 4 encoders, 10 master playbacks and a color built-in display, combined with a complete set of RGB buttons, give the users a full console platform able to manage incredible shows in a very reduced size, which is compatible with airplane carry-on luggage.",
@@ -83,7 +83,7 @@ export const products = [
     category: "Lightshark Controllers",
     name: "LS-Wing",
     tags: "Led, LED Effects / Special Effects, LED Video Walls, Lighting, Lightshark Controllers, LS-Wing",
-    image: "/assets/lightshark-img/LS-Wing-1.PNG",
+    image: "/assets/lightshark-img/LightShark_pers-removebg-preview.png",
     brand: "lightshark",
     description:
       "LS-Wing is an innovative hardware which offers several products in one: A Wing for LS-1 / LS -Core, an OSC/UDP hardware controller, a MIDI controller and a user programmable remote controller. ",
