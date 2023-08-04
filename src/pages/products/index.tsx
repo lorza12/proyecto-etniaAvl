@@ -122,9 +122,10 @@ const Products = () => {
   return (
     <>
       <Head>
-        <title>Etniapro | Products</title>
+        <title>EtniaAvl | Products</title>
         <meta name="description" content="Products Page" />
-        <link rel="icon" href="/logoIcon1.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/EtniaAvlicon.ico" />
       </Head>
       <div className={styles.productsGlobalContainer}>
         <h1 className={montserrat.className}>/ PRODUCTOS /</h1>
@@ -154,7 +155,9 @@ const Products = () => {
                     className={styles.inputBrand}
                     onChange={handleRadioChange}
                   />
-                  <label htmlFor="all">TODAS</label>
+                  <label htmlFor="all" className={styles.cursorList}>
+                    TODAS
+                  </label>
                 </div>
               </li>
               {brandType.map((brand, idx) => (
@@ -168,7 +171,9 @@ const Products = () => {
                       className={styles.inputBrand}
                       onChange={handleRadioChange}
                     />
-                    <label htmlFor={brand}>{brand}</label>
+                    <label htmlFor={brand} className={styles.cursorList}>
+                      {brand}
+                    </label>
                   </div>
                 </li>
               ))}

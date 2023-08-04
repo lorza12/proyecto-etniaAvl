@@ -65,6 +65,11 @@
 .inputBrand {
   appearance: none;
   -webkit-appearance: none;
+
+}
+
+.cursorList {
+  cursor: pointer;
 }
 
 .productsContainerMajor {
