@@ -1,5 +1,4 @@
 import "@/styles/globals.css";
-import "@/styles/Banner.module.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";

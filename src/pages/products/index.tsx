@@ -158,6 +158,7 @@ const Products = () => {
                   <label htmlFor="all" className={styles.cursorList}>
                     TODAS
                   </label>
+                  
                 </div>
               </li>
               {brandType.map((brand, idx) => (

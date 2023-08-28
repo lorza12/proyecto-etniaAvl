@@ -1,9 +1,8 @@
-import Head from "next/head";
 import { Prompt } from "next/font/google";
 import styles from "@/styles/KnowUs.module.css";
 import Image from "next/image";
-import Logo from "../navbar/assets/LOGOETNIAAVL.png";
-import Logo2 from "../knowUs/assets/LOGOETNIAAVL2.png";
+import Logo from "../../../public/assets/LOGOETNIAAVL.png";
+import Logo2 from "../../../public/assets/LOGOETNIAAVL2.png";
 import Link from "next/link";
 const prompt = Prompt({
   subsets: ["latin"],

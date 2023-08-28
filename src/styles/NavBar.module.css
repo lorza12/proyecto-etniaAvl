@@ -1,3 +1,4 @@
+
 .navBarContainer {
   display: flex;
   flex-direction: row;
@@ -27,11 +28,15 @@
   display: none;
 }
 
-@media (max-width: 730px) {
+.butto_cart2{
+  color: white;
+}
+
+@media (max-width: 780px) {
 
   .navBarContainer {
-    padding: 10px;
-    padding-left: 0;
+    padding: 0.6rem 1.5rem 0.6rem 0.6rem;
+
   }
 
   .navBarContainer__options {
@@ -101,5 +106,19 @@
   }
 
 }
+
+@media (max-width: 560px) {
+
+  .navBarContainer {
+    padding: 0 1.5rem 0 0;
+
+  }
+  .imgEtnia {
+    width: 280px;
+    height: 150px;
+  }
+}
+
+
 
 
