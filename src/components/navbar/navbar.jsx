@@ -7,9 +7,9 @@ import Image from "next/image";
 import Logo from "../../../public/assets/LOGOETNIAAVL2.png";
 import { ImMenu } from "react-icons/im";
 import { AiFillHome } from "react-icons/ai";
+import { MdPermContactCalendar } from "react-icons/md";
 import { SiWebpack } from "react-icons/si";
 import { RiRegisteredFill } from "react-icons/ri";
-import { HiOfficeBuilding } from "react-icons/hi";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "400",
@@ -103,12 +103,12 @@ function NavBar() {
                 <br />
                 <br />
                 <div className={styles.span}>
-                  <Link href={"/about"}>
+                  <Link href={"/brands"}>
                     <li
                       className={prompt.className}
-                      onClick={() => handleItemClick("about")}
+                      onClick={() => handleItemClick("brands")}
                     >
-                      <HiOfficeBuilding size={20} /> Compañia
+                      <RiRegisteredFill size={20} /> Marcas
                     </li>
                   </Link>
                   <span className={styles.span2}>&#8594;</span>
@@ -116,12 +116,9 @@ function NavBar() {
                 <br />
                 <br />
                 <div className={styles.span}>
-                  <Link href={"/brands"}>
-                    <li
-                      className={prompt.className}
-                      onClick={() => handleItemClick("brands")}
-                    >
-                      <RiRegisteredFill size={20} /> Marcas
+                  <Link href={"#footer"}>
+                    <li className={prompt.className}>
+                      <MdPermContactCalendar size={20} /> Contacto
                     </li>
                   </Link>
                   <span className={styles.span2}>&#8594;</span>

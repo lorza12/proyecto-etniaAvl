@@ -1,5 +1,101 @@
 export const products = [
   {
+    id: 41,
+    category: "",
+    name: "ZENITH 1000",
+    tags: "Audio amplifier",
+    image: "/assets/equipson-img/Zenith_1000_pers_20210603171953.png",
+    brand: "workpro-sound",
+    description:
+      "Zenith 1000 is a 500W @ 4 Ohm 2-channel professional audio amplifier, with switching power supply, built in a 2-rack-unit metal enclosure. It has balanced inputs in XLR3 format and outputs with XLN4 connectors. It has selectors for input sensitivity and operating mode. It also has protection systems against short circuit, temperature, DC, VHF and constant high frequency signal. The front panel has a power switch, independent volume controls for each channel, and power, signal, clip and protection indicators.",
+    description2: "",
+    feactures: [
+      "Stereo / Bridge / Parallel modes.",
+      "Volume control and level meter.",
+      "Signal, clip and protection indicator LEDs.",
+      "2 19-inch rack units.",
+    ],
+    specifications: [
+      {
+        name: "Type",
+        values: "	Class D. Switching source",
+      },
+      {
+        name: "No. Chanels",
+        values: "2",
+      },
+      {
+        name: "W/Ch @ 8 Ohm",
+        values: "300 W",
+      },
+      {
+        name: "W/Ch @ 4 Ohm",
+        values: "500 W",
+      },
+      {
+        name: "W Bridge @ 8 Ohm",
+        values: "1000 W",
+      },
+      {
+        name: "Frequency Range",
+        values: "20 Hz - 20 KHz",
+      },
+      {
+        name: "THD+N",
+        values: "<0.15 %",
+      },
+      {
+        name: "S/N Rate",
+        values: ">100 dB",
+      },
+      {
+        name: "Damping Factor",
+        values: "	>500",
+      },
+      {
+        name: "Gain",
+        values: "	36 dB",
+      },
+      {
+        name: "Input Impedance",
+        values: "20 KOhm (balanced) / 10 KOhm (unbalanced)",
+      },
+      {
+        name: "Input Sensitvity",
+        values: "0.775 V / 1 V / 32 dB",
+      },
+      {
+        name: "Connections",
+        values: "Power: Powercon; Signal: XLR3 for input and output; AMP: NL4",
+      },
+      {
+        name: "Protections",
+        values:
+          "	Soft start, VHF, DC, Overload, Clip, Limiting, Short-circuit, Over-temperature, Progressive volume",
+      },
+      {
+        name: "Refrigeration",
+        values: "Fans Air flow from front to rear",
+      },
+      {
+        name: "Power supply",
+        values: "	AC 100-240 V, 50/60 Hz",
+      },
+      {
+        name: "Consumption",
+        values: "	480 W",
+      },
+      {
+        name: "Dimensions",
+        values: "	483 x 88 x 305.5 mm",
+      },
+      {
+        name: "Weight",
+        values: "7.3 Kg",
+      },
+    ],
+  },
+  {
     id: 1,
     category: "Lightshark Controllers",
     name: "LS 1",
@@ -1702,102 +1798,6 @@ export const products = [
       {
         name: "Colour",
         values: "Black",
-      },
-    ],
-  },
-  {
-    id: 41,
-    category: "",
-    name: "ZENITH 1000",
-    tags: "Audio amplifier",
-    image: "/assets/equipson-img/Zenith_1000_pers_20210603171953.png",
-    brand: "workpro-sound",
-    description:
-      "Zenith 1000 is a 500W @ 4 Ohm 2-channel professional audio amplifier, with switching power supply, built in a 2-rack-unit metal enclosure. It has balanced inputs in XLR3 format and outputs with XLN4 connectors. It has selectors for input sensitivity and operating mode. It also has protection systems against short circuit, temperature, DC, VHF and constant high frequency signal. The front panel has a power switch, independent volume controls for each channel, and power, signal, clip and protection indicators.",
-    description2: "",
-    feactures: [
-      "Stereo / Bridge / Parallel modes.",
-      "Volume control and level meter.",
-      "Signal, clip and protection indicator LEDs.",
-      "2 19-inch rack units.",
-    ],
-    specifications: [
-      {
-        name: "Type",
-        values: "	Class D. Switching source",
-      },
-      {
-        name: "No. Chanels",
-        values: "2",
-      },
-      {
-        name: "W/Ch @ 8 Ohm",
-        values: "300 W",
-      },
-      {
-        name: "W/Ch @ 4 Ohm",
-        values: "500 W",
-      },
-      {
-        name: "W Bridge @ 8 Ohm",
-        values: "1000 W",
-      },
-      {
-        name: "Frequency Range",
-        values: "20 Hz - 20 KHz",
-      },
-      {
-        name: "THD+N",
-        values: "<0.15 %",
-      },
-      {
-        name: "S/N Rate",
-        values: ">100 dB",
-      },
-      {
-        name: "Damping Factor",
-        values: "	>500",
-      },
-      {
-        name: "Gain",
-        values: "	36 dB",
-      },
-      {
-        name: "Input Impedance",
-        values: "20 KOhm (balanced) / 10 KOhm (unbalanced)",
-      },
-      {
-        name: "Input Sensitvity",
-        values: "0.775 V / 1 V / 32 dB",
-      },
-      {
-        name: "Connections",
-        values: "Power: Powercon; Signal: XLR3 for input and output; AMP: NL4",
-      },
-      {
-        name: "Protections",
-        values:
-          "	Soft start, VHF, DC, Overload, Clip, Limiting, Short-circuit, Over-temperature, Progressive volume",
-      },
-      {
-        name: "Refrigeration",
-        values: "Fans Air flow from front to rear",
-      },
-      {
-        name: "Power supply",
-        values: "	AC 100-240 V, 50/60 Hz",
-      },
-      {
-        name: "Consumption",
-        values: "	480 W",
-      },
-      {
-        name: "Dimensions",
-        values: "	483 x 88 x 305.5 mm",
-      },
-      {
-        name: "Weight",
-        values: "7.3 Kg",
       },
     ],
   },

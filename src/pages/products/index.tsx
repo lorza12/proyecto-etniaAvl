@@ -160,6 +160,13 @@ const Products = () => {
                   </label>
                 </div>
               </li>
+              <li className={styles.brandListItem}>
+                <div className={montserrat.className}>
+                  <Link href={"https://gammaledvision.com/"} target="blank">
+                    <p>Gamma</p>
+                  </Link>
+                </div>
+              </li>
               {brandType.map((brand, idx) => (
                 <li key={idx} className={styles.brandListItem}>
                   <div className={montserrat.className}>
