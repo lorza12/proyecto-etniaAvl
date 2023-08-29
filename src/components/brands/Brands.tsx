@@ -27,16 +27,23 @@ function Brands() {
         </section>
         <section className={styles.bransContainer__brands}>
           <article className={styles.bransContainer__brand1}>
-            <Link href={`/brands/workpro-lifters`}>
+            <Link href={`https://gammaledvision.com/`}>
               <div className={styles.bransContainer__brand__circle}>
-                <Image src={brand1} alt="brand1" width={195} height={50} />
+                <Image src={brand5} alt="brand5" width={150} height={50} />
               </div>
             </Link>
           </article>
           <article className={styles.bransContainer__brand2}>
+            <Link href={`/brands/workpro-sound`}>
+              <div className={styles.bransContainer__brand__circle}>
+                <Image src={brand4} alt="brand4" width={150} height={50} />
+              </div>
+            </Link>
+          </article>
+          <article className={styles.bransContainer__brand3}>
             <Link href={`/brands/lightshark`}>
               <div className={styles.bransContainer__brand__circle}>
-                <Image src={brand2} alt="brand2" width={195} height={50} />
+                <Image src={brand2} alt="brand2" width={195} height={45} />
               </div>
             </Link>
           </article>
@@ -48,16 +55,9 @@ function Brands() {
             </Link>
           </article>
           <article className={styles.bransContainer__brand3}>
-            <Link href={`/brands/workpro-sound`}>
+            <Link href={`/brands/workpro-lifters`}>
               <div className={styles.bransContainer__brand__circle}>
-                <Image src={brand4} alt="brand4" width={150} height={50} />
-              </div>
-            </Link>
-          </article>
-          <article className={styles.bransContainer__brand3}>
-            <Link href={`https://gammaledvision.com/`}>
-              <div className={styles.bransContainer__brand__circle}>
-                <Image src={brand5} alt="brand5" width={150} height={50} />
+                <Image src={brand1} alt="brand1" width={195} height={50} />
               </div>
             </Link>
           </article>
