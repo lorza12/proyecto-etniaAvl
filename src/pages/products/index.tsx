@@ -158,7 +158,6 @@ const Products = () => {
                   <label htmlFor="all" className={styles.cursorList}>
                     TODAS
                   </label>
-                  
                 </div>
               </li>
               {brandType.map((brand, idx) => (
@@ -217,7 +216,7 @@ const Products = () => {
                     href={`/products/${product.id}`}
                     className={styles.productsLink}
                   >
-                    <button className={styles.details}>
+                    <button className={styles.detailsButton}>
                       <h3>{`Details >`}</h3>
                     </button>
                   </Link>

@@ -1,5 +1,8 @@
-
+.ProductDetailContainer {
+  background: rgb(31, 31, 31);
+}
 .ProductDetailContainer__mainConteiner {
+
   display: flex;
   flex-direction: column;
   text-align: center;

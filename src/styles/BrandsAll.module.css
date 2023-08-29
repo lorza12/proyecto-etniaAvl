@@ -1,4 +1,5 @@
 .productsGlobalContainer_main {
+
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -6,6 +7,7 @@
 }
 
 .productsAllContainer {
+  background: rgb(31, 31, 31);
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -13,6 +15,7 @@
 }
 
 .productsContainer__main {
+  background: rgb(31, 31, 31);
   display: flex;
   flex-direction: column;
   gap: 6rem;
@@ -97,6 +100,7 @@
 }
 
 .details {
+  color: white;
   border: none;
   background-color: transparent;
   font-size: 1em;
@@ -110,6 +114,7 @@
 }
 
 .bransALlContainer {
+  background: rgb(31, 31, 31);
   display: flex;
   flex-direction: column;
   gap: 10rem;
