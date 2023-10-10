@@ -36,8 +36,8 @@ function Products() {
                     <Image
                       src={product.image}
                       alt={product.name}
-                      width={300}
-                      height={250}
+                      width={250}
+                      height={200}
                     />
                   </div>
 

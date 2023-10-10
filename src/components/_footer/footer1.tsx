@@ -33,7 +33,7 @@ function Footer() {
               <br />
               <br />
               <h1>Correo electronico</h1>
-              <p>etnia@gmail.com</p>
+              <p>info@etniaavl.com</p>
               <br />
               <h1>Telefono</h1>
               <p>314 673 05423</p>
@@ -46,14 +46,6 @@ function Footer() {
                 <div className={styles.divs__interval}>
                   <p>Lun-Vie</p>
                   <p>8:00 a.m - 5:00 p.m</p>
-                </div>
-                <div className={styles.divs__interval}>
-                  <p>Sáb</p>
-                  <p>9:00 a.m - 5:00 p.m</p>
-                </div>
-                <div>
-                  <p>Lun-Vie</p>
-                  <p>10:00 a.m - 4:00 p.m</p>
                 </div>
               </div>
             </article>
