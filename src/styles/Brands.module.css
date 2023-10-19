@@ -1,6 +1,4 @@
 .bransContainer {
-  /* background-color: rgb(5, 5, 5); */
-  /* background-image: url("../../public/assets/backgraund-img1.jpg") ; */
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("../../public/assets/backgraund-img1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,11 +16,26 @@
 
 .bransContainer__brands {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   gap: 100px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
+}
+
+.bransContainer_brandsUp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+
+
+}
+.bransContainer_brandsDown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+
+
 }
 
 .bransContainer__brand__circle {
@@ -45,6 +58,17 @@
 
   .bransContainer__brands {
     gap: 100px;
+  }
+}
+@media (max-width: 450px) {
+
+  .bransContainer_brandsUp {
+    gap: 50px;
+
+  }
+  .bransContainer_brandsDown {
+    gap: 50px;
+
   }
 }
 
