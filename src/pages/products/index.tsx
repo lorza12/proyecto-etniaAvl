@@ -10,6 +10,8 @@ import { useEffect, useId, useRef, useState } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { AiOutlineDown } from "react-icons/ai";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import { getImageProduct } from "@/services/products";
 
 export interface ProductModel {
   id: number;
@@ -22,7 +24,7 @@ export interface ProductModel {
   description2: string;
 }
 
-const Products = () => {
+const Products = ({ products }) => {
   const [brand, setBrand] = useState<string>("all");
   const [checked, setChecked] = useState<boolean>(false);
   const [windowSize, setWindowSize] = useState(() => {
@@ -35,6 +37,9 @@ const Products = () => {
   const [bottom, setBottom] = useState<boolean>(false);
   const brandCheckboxId = useId();
   const scrollRef = useRef(null);
+  const attributes = products.map((element) => {
+    return element.attributes;
+  });
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -95,8 +100,8 @@ const Products = () => {
     setBottom(false);
   };
 
-  const brandType = getUniqueCategory(prod, "brand");
-  const filteredProducts = filterProducts(prod);
+  const brandType = getUniqueCategory(attributes, "brand");
+  const filteredProducts = filterProducts(attributes);
 
   const scrollSlide = () => {
     if (windowSize >= 710 && windowSize <= 768) {
@@ -203,11 +208,11 @@ const Products = () => {
                 <div key={product.name} className={styles.productsItem}>
                   <Link
                     key={product.id}
-                    href={`/products/${product.id}`}
+                    href={`/products/${product.name}?name=${product.name}`}
                     className={styles.productsLink}
                   >
                     <Image
-                      src={product.image}
+                      src={getImageProduct(product)}
                       alt={product.name}
                       width={300}
                       height={300}
@@ -220,7 +225,7 @@ const Products = () => {
 
                   <Link
                     key={product.id}
-                    href={`/products/${product.id}`}
+                    href={`/products/${product.name}?name=${product.name}`}
                     className={styles.productsLink}
                   >
                     <button className={styles.detailsButton}>
@@ -248,3 +253,48 @@ const Products = () => {
 };
 
 export default Products;
+
+export async function getServerSideProps() {
+  const client = new ApolloClient({
+    uri: "https://etniaavl-admin-726308944a7f.herokuapp.com/graphql",
+    cache: new InMemoryCache({
+      addTypename: false,
+      resultCaching: false,
+    }),
+  });
+
+  const { data } = await client.query({
+    query: gql`
+      query getProduct {
+        products(pagination: { page: 1, pageSize: 100 }) {
+          data {
+            id
+            attributes {
+              name
+              brand
+              tags
+              features {
+                feature
+              }
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `,
+  });
+
+  console.log(data.products.data);
+
+  return {
+    props: {
+      products: data?.products?.data,
+    },
+  };
+}

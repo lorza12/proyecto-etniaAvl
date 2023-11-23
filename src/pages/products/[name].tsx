@@ -5,31 +5,31 @@ import { useRouter } from "next/router";
 import { products as produ } from "../../assets/dataProducts";
 import { montserrat } from "@/styles/fonts";
 import { GrTextAlignCenter } from "react-icons/gr";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import { getImageProduct } from "@/services/products";
 
-const ProductDetailPage = () => {
-  const router = useRouter();
-  const { id } = router.query;
-
-  const product = produ.filter((element) => element.id.toString() === id);
-
+const ProductDetailPage = ({ product }) => {
+  const attributes = product.map((element) => {
+    return element.attributes;
+  });
   return (
     <>
       <Head>
-        <title>Product | Detail</title>
+        <title>Producto | Detalle</title>
         <meta name="description" content="Products detail" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/EtniaAvlicon.ico" />
       </Head>
 
       <main className={montserrat.className}>
-        {product.map((item) => (
+        {attributes.map((item) => (
           <>
             <section className={styles.ProductDetailContainer}>
               <section className={styles.ProductDetailContainer__mainConteiner}>
                 <section className={styles.ProductDetailContainer__info}>
                   <article>
                     <Image
-                      src={item.image}
+                      src={getImageProduct(item)}
                       alt="productDetail"
                       width={500}
                       height={450}
@@ -60,20 +60,22 @@ const ProductDetailPage = () => {
                 </section>
               </section>
               <section className={styles.ProductDetailContainer__feactures}>
-                {item.feactures && item.specifications ? (
+                {item.features && item.specifications ? (
                   <article
                     className={
                       styles.ProductDetailContainer__feactures__container
                     }
                   >
                     <div>
-                      {item.feactures.length === 0 ? null : <h4>Feactures:</h4>}
+                      {item.features.length === 0 ? null : (
+                        <h4>Caracteristicas:</h4>
+                      )}
 
                       <br />
                       <ul className={styles.feacturesList}>
-                        {item.feactures.map((element, index) => (
+                        {item.features.map((element, index) => (
                           <div key={index}>
-                            <li key={index}>{element}</li>
+                            <li key={index}>{element.feature}</li>
                           </div>
                         ))}
                       </ul>
@@ -83,7 +85,7 @@ const ProductDetailPage = () => {
                     >
                       {item.specifications.length === 0 ? null : (
                         <>
-                          <h4>Technical Data</h4>
+                          <h4>Datos técnicos</h4>
                           <br />
                           <table
                             border={2}
@@ -149,3 +151,56 @@ const ProductDetailPage = () => {
 };
 
 export default ProductDetailPage;
+
+export async function getServerSideProps(context) {
+  const { name } = context.query;
+
+  const client = new ApolloClient({
+    uri: "https://etniaavl-admin-726308944a7f.herokuapp.com/graphql",
+    cache: new InMemoryCache({
+      addTypename: false,
+      resultCaching: false,
+    }),
+  });
+
+  const { data } = await client.query({
+    query: gql`
+      query getProduct($productName: String!) {
+        products(filters: { name: { eq: $productName } }) {
+          data {
+            attributes {
+              name
+              brand
+              tags
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+              specifications(pagination: { pageSize: 50 }) {
+                name
+                values
+              }
+              features {
+                feature
+              }
+              description
+              description2
+            }
+          }
+        }
+      }
+    `,
+    variables: {
+      productName: name,
+    },
+  });
+
+  return {
+    props: {
+      product: data?.products?.data,
+    },
+  };
+}

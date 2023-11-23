@@ -3,15 +3,18 @@ import { Prompt } from "next/font/google";
 import styles from "@/styles/Products.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { GiCheckMark } from "react-icons/gi";
 import { mainProducts as prod } from "../../assets/dataMainProducts";
+import { getImageProduct } from "@/services/products";
 
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "400",
 });
 
-function Products() {
+function Products({ productsHome }) {
+  const attributes = productsHome.map((element) => {
+    return element.attributes;
+  });
   return (
     <>
       <main className={styles.main2}>
@@ -23,7 +26,7 @@ function Products() {
           </div>
 
           <div className={styles.productsContainer__products}>
-            {prod.map((product) => (
+            {attributes.map((product) => (
               <>
                 <div
                   key={product.id}
@@ -34,7 +37,7 @@ function Products() {
                   >
                     {" "}
                     <Image
-                      src={product.image}
+                      src={getImageProduct(product)}
                       alt={product.name}
                       width={250}
                       height={200}
@@ -47,7 +50,9 @@ function Products() {
                     <h1 className={prompt.className}>{product.name}</h1>
                     <p className={prompt.className}>{product.tags}</p>
                     <br />
-                    <Link href={`/products/${product.id}`}>
+                    <Link
+                      href={`/mainProducts/${product.name}?name=${product.name}`}
+                    >
                       <button type="button" className={styles.product__button}>
                         Ver Producto{" "}
                       </button>

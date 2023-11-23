@@ -3,8 +3,9 @@ import Banner from "../components/banner/banner";
 import KnowUs from "../components/knowUs/knowUs";
 import Products from "../components/products/products1";
 import Brands from "@/components/brands/Brands";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
-function Home() {
+function Home({ productsHome }) {
   return (
     <>
       <Head>
@@ -19,10 +20,48 @@ function Home() {
       </Head>
       <Banner />
       <KnowUs />
-      <Products />
+      <Products productsHome={productsHome} />
       <Brands />
     </>
   );
 }
 
 export default Home;
+
+export async function getServerSideProps() {
+  const client = new ApolloClient({
+    uri: "https://etniaavl-admin-726308944a7f.herokuapp.com/graphql",
+    cache: new InMemoryCache({
+      addTypename: false,
+      resultCaching: false,
+    }),
+  });
+
+  const { data } = await client.query({
+    query: gql`
+      query getMainProduct {
+        homeProducts {
+          data {
+            attributes {
+              name
+              tags
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `,
+  });
+
+  return {
+    props: {
+      productsHome: data?.homeProducts?.data,
+    },
+  };
+}

@@ -1,16 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
-import { useRouter } from "next/router";
-import { products as produ } from "../../assets/dataProducts";
+// import { products as produ } from "../../assets/dataProducts";
 import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
 import { montserrat } from "@/styles/fonts";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import styles from "../../styles/BrandsAll.module.css";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import { getImageProduct } from "@/services/products";
 
-const BrandsDetail = () => {
-  const router = useRouter();
-  const { brand } = router.query;
+const BrandsDetail = ({ products }) => {
+  console.log("🚀 ~ file: [brand].tsx:13 ~ BrandsDetail ~ products:", products);
   const scrollRef = useRef(null);
   const [top, setTop] = useState(true);
   const [bottom, setBottom] = useState(false);
@@ -21,7 +21,12 @@ const BrandsDetail = () => {
     return null;
   });
 
-  const product = produ.filter((element) => element.brand === brand);
+  const attributes = products.map((element) => {
+    return element.attributes;
+  });
+  const brand = attributes.map((element) => {
+    return element.brand;
+  });
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -66,7 +71,7 @@ const BrandsDetail = () => {
       <main className={styles.productsContainer__main}>
         <section>
           <h1 className={`${montserrat.className} ${styles.title}`}>
-            / {brand} /
+            / {brand[0]} /
           </h1>
         </section>
         <section>
@@ -82,14 +87,14 @@ const BrandsDetail = () => {
             </div>
 
             <div className={styles.productsContainer} ref={scrollRef}>
-              {product.map((item) => (
+              {attributes.map((item) => (
                 <Link
                   key={item.id}
                   href={`/products/${item.id}`}
                   className={styles.productsItem}
                 >
                   <Image
-                    src={item.image}
+                    src={getImageProduct(item)}
                     alt="img"
                     width={200}
                     height={200}
@@ -128,3 +133,46 @@ const BrandsDetail = () => {
 };
 
 export default BrandsDetail;
+
+export async function getServerSideProps(context) {
+  const { brand } = context.query;
+  const client = new ApolloClient({
+    uri: "https://etniaavl-admin-726308944a7f.herokuapp.com/graphql",
+    cache: new InMemoryCache({
+      addTypename: false,
+      resultCaching: false,
+    }),
+  });
+
+  const { data } = await client.query({
+    query: gql`
+      query getProduct($brandName: String!) {
+        products(filters: { brand: { eq: $brandName } }) {
+          data {
+            attributes {
+              name
+              brand
+              tags
+              image {
+                data {
+                  attributes {
+                    url
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    `,
+    variables: {
+      brandName: brand,
+    },
+  });
+
+  return {
+    props: {
+      products: data?.products?.data,
+    },
+  };
+}
