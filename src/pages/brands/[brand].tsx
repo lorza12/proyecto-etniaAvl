@@ -10,7 +10,6 @@ import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import { getImageProduct } from "@/services/products";
 
 const BrandsDetail = ({ products }) => {
-  console.log("🚀 ~ file: [brand].tsx:13 ~ BrandsDetail ~ products:", products);
   const scrollRef = useRef(null);
   const [top, setTop] = useState(true);
   const [bottom, setBottom] = useState(false);
@@ -90,7 +89,7 @@ const BrandsDetail = ({ products }) => {
               {attributes.map((item) => (
                 <Link
                   key={item.id}
-                  href={`/products/${item.id}`}
+                  href={`/products/${item.name}?name=${item.name}`}
                   className={styles.productsItem}
                 >
                   <Image
