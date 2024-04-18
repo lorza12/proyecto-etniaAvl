@@ -4,6 +4,7 @@ import KnowUs from "../components/knowUs/knowUs";
 import Products from "../components/products/products1";
 import Brands from "@/components/brands/Brands";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import Link from "next/link";
 
 function Home({ productsHome }) {
   return (
@@ -19,6 +20,9 @@ function Home({ productsHome }) {
         <link rel="icon" href="/EtniaAvlicon.ico" />
       </Head>
       <Banner />
+      <p>
+        Click <Link href="/ppp.html">here</Link> to go to the about page.
+      </p>
       <KnowUs />
       <Products productsHome={productsHome} />
       <Brands />
