@@ -20,9 +20,6 @@ function Home({ productsHome }) {
         <link rel="icon" href="/EtniaAvlicon.ico" />
       </Head>
       <Banner />
-      <p>
-        Click <Link href="/ppp.html">here</Link> to go to the about page.
-      </p>
       <KnowUs />
       <Products productsHome={productsHome} />
       <Brands />
@@ -34,7 +31,7 @@ export default Home;
 
 export async function getServerSideProps() {
   const client = new ApolloClient({
-    uri: "https://etniaavl-admin-726308944a7f.herokuapp.com/graphql",
+    uri: "https://etnia-avl-af5d3a9c6172.herokuapp.com/graphql",
     cache: new InMemoryCache({
       addTypename: false,
       resultCaching: false,

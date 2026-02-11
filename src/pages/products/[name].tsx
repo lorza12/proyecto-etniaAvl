@@ -15,7 +15,7 @@ const ProductDetailPage = ({ product }) => {
   return (
     <>
       <Head>
-        <title>Producto | Detalle</title>
+        <title>Detalle Producto</title>
         <meta name="description" content="Products detail" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/EtniaAvlicon.ico" />
@@ -156,7 +156,7 @@ export async function getServerSideProps(context) {
   const { name } = context.query;
 
   const client = new ApolloClient({
-    uri: "https://etniaavl-admin-726308944a7f.herokuapp.com/graphql",
+    uri: "https://etnia-avl-af5d3a9c6172.herokuapp.com/graphql",
     cache: new InMemoryCache({
       addTypename: false,
       resultCaching: false,

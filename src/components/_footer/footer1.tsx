@@ -36,7 +36,7 @@ function Footer() {
               <p>info@etniaavl.com</p>
               <br />
               <h1>Telefono</h1>
-              <p>314 673 05423</p>
+              <p>+57 314 673 05423</p>
             </article>
             <article className={styles.footerContainer__section1__hours}>
               <h1>Horarios</h1>

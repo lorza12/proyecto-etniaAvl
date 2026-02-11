@@ -38,7 +38,7 @@ function NavBar() {
                 src={Logo}
                 alt="img logo"
                 width={380}
-                height={190}
+                height={165}
                 className={styles.imgEtnia}
               />
             </Link>

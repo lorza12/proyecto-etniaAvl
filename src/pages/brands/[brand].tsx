@@ -51,7 +51,7 @@ const BrandsDetail = ({ products }) => {
     const scrollPosition = (scrollRef.current.scrollLeft += scrollOffset);
     const scrollToTop =
       Math.floor(
-        scrollRef.current.scrollWidth - (scrollRef.current.scrollLeft + 1)
+        scrollRef.current.scrollWidth - (scrollRef.current.scrollLeft + 1),
       ) <= scrollRef.current.clientWidth;
     const buttonLeft = scrollPosition <= 300 ? true : false;
     setBottom(scrollToTop);
@@ -61,7 +61,7 @@ const BrandsDetail = ({ products }) => {
   return (
     <>
       <Head>
-        <title>Brands | Products </title>
+        <title>Productos</title>
         <meta name="description" content="Brands" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/EtniaAvlicon.ico" />
@@ -110,7 +110,7 @@ const BrandsDetail = ({ products }) => {
                   <button
                     className={`${montserrat.className} ${styles.details}`}
                   >
-                    <h3>{`Details >`}</h3>
+                    <h3>{`Ver Detalle`}</h3>
                   </button>
                 </Link>
               ))}
@@ -136,7 +136,7 @@ export default BrandsDetail;
 export async function getServerSideProps(context) {
   const { brand } = context.query;
   const client = new ApolloClient({
-    uri: "https://etniaavl-admin-726308944a7f.herokuapp.com/graphql",
+    uri: "https://etnia-avl-af5d3a9c6172.herokuapp.com/graphql",
     cache: new InMemoryCache({
       addTypename: false,
       resultCaching: false,

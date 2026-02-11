@@ -54,7 +54,7 @@ const Products = ({ products }) => {
   useEffect(() => {
     localStorage.setItem(
       "productsState",
-      JSON.stringify({ brand, checked, top, bottom })
+      JSON.stringify({ brand, checked, top, bottom }),
     );
 
     // return () => {
@@ -117,7 +117,7 @@ const Products = ({ products }) => {
     const scrollPosition = (scrollRef.current.scrollLeft += scrollOffset);
     const scrollToTop =
       Math.floor(
-        scrollRef.current.scrollWidth - (scrollRef.current.scrollLeft + 1)
+        scrollRef.current.scrollWidth - (scrollRef.current.scrollLeft + 1),
       ) <= scrollRef.current.clientWidth;
     const buttonLeft = scrollPosition <= 300 ? true : false;
     setBottom(scrollToTop);
@@ -127,7 +127,7 @@ const Products = ({ products }) => {
   return (
     <>
       <Head>
-        <title>EtniaAvl | Products</title>
+        <title>Productos</title>
         <meta name="description" content="Products Page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/EtniaAvlicon.ico" />
@@ -229,7 +229,7 @@ const Products = ({ products }) => {
                     className={styles.productsLink}
                   >
                     <button className={styles.detailsButton}>
-                      <h3>{`Details >`}</h3>
+                      <h3>{`Ver Detalle`}</h3>
                     </button>
                   </Link>
                 </div>
@@ -256,7 +256,7 @@ export default Products;
 
 export async function getServerSideProps() {
   const client = new ApolloClient({
-    uri: "https://etniaavl-admin-726308944a7f.herokuapp.com/graphql",
+    uri: "https://etnia-avl-af5d3a9c6172.herokuapp.com/graphql",
     cache: new InMemoryCache({
       addTypename: false,
       resultCaching: false,
